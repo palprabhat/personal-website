@@ -1,0 +1,76 @@
+:root {
+  --black: #2f2e41;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  color: var(--black);
+}
+
+body {
+  background-color: #fff;
+}
+
+::selection {
+  background-color: var(--color-blue) !important;
+  color: var(--color-white);
+}
+
+:target::before {
+  content: "";
+  display: block;
+  top: -5rem;
+  margin: 5rem 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+h2 {
+  @apply text-3xl;
+  line-height: normal;
+
+  @screen md {
+    @apply text-4xl;
+  }
+}
+
+p {
+  @apply mt-3;
+}
+
+.margin-top-neg {
+  @screen md {
+    margin-top: -1.5rem !important;
+  }
+  @screen lg {
+    margin-top: -2rem !important;
+  }
+  @screen xl {
+    margin-top: -2.5rem !important;
+  }
+}
+
+.hero-img {
+  width: 250px;
+
+  @screen md {
+    width: 280px;
+  }
+  @screen lg {
+    width: 380px;
+  }
+  @screen xl {
+    width: 500px;
+  }
+}
