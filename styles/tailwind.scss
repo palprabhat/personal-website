@@ -1,14 +1,10 @@
-:root {
-  --black: #2f2e41;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
+  @apply text-black;
   scroll-behavior: smooth;
-  color: var(--black);
 }
 
 body {
@@ -16,8 +12,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-blue) !important;
-  color: var(--color-white);
+  @apply bg-primary-500 text-white;
 }
 
 :target::before {
@@ -40,37 +35,53 @@ h2 {
   @apply text-3xl;
   line-height: normal;
 
-  @screen md {
+  @screen lg {
     @apply text-4xl;
   }
 }
 
+h3 {
+  @apply text-xl;
+}
+
 p {
-  @apply mt-3;
+  @apply mt-3 text-xl;
+}
+
+.section-p {
+  @apply py-16 px-4;
+
+  @screen md {
+    @apply py-24 px-12;
+  }
+
+  @screen lg {
+    @apply py-32;
+  }
 }
 
 .margin-top-neg {
   @screen md {
-    margin-top: -1.5rem !important;
+    margin-top: -1.7rem !important;
   }
   @screen lg {
-    margin-top: -2rem !important;
+    margin-top: -2.2rem !important;
   }
   @screen xl {
     margin-top: -2.5rem !important;
   }
 }
 
-.hero-img {
-  width: 250px;
+.timeline {
+  &::before {
+    content: "";
+    @apply absolute h-full bg-black w-1 left-0;
+    @screen md {
+      @apply left-auto;
+    }
+  }
 
-  @screen md {
-    width: 280px;
-  }
-  @screen lg {
-    width: 380px;
-  }
-  @screen xl {
-    width: 500px;
+  .grad-cap {
+    transform: rotate(-45deg) translateX(-1px) translateY(-63px);
   }
 }

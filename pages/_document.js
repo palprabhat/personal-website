@@ -17,7 +17,6 @@ class MyDocument extends Document {
             content="width=device-width, initial-scale=1.0, maximum-scale=2.0"
           />
 
-          <title>Prabhat Pal</title>
           <link rel="icon" href="/favicon.ico" />
           <link
             href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&family=Quattrocento+Sans:wght@400;700&display=swap"
