@@ -2,6 +2,7 @@ import Hero from "@components/hero";
 import OtherProjects from "@components/otherProjects";
 import Technologies from "@components/technologies";
 import Timeline from "@components/timeline";
+import Contact from "@components/Contact";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Technologies />
       <Timeline />
       <OtherProjects />
+      <Contact />
     </>
   );
 };

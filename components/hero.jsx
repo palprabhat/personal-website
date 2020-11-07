@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="pt-8 md:pt-0 md:text-left md:w-3/5">
             <h2>Full stack web developer</h2>
             <p>I design and build web application, and I love what I do.</p>
-            <div className="md:flex mt-8 pb-4">
+            <div className="flex flex-col lg:flex-row mt-8 md:mt-4 lg:mt-8 mb-10">
               <div>
                 <BrandLink
                   link="https://www.linkedin.com/in/prabhatpal14/"
@@ -28,7 +28,7 @@ const Hero = () => {
                   iconClass="brand-icon-twitter ml-12"
                 />
               </div>
-              <div className="mt-8 md:mt-0 md:ml-12">
+              <div className="mt-6 lg:mt-0 lg:ml-12">
                 <Link href="/docs/Resume - Prabhat Pal.pdf">
                   <a target="_blank" rel="noreferrer" className="btn-secondary">
                     Download Resume

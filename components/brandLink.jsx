@@ -6,7 +6,7 @@ const BrandLink = ({ link, iconClass }) => {
       href={link}
       target="_blank"
       rel="noreferrer"
-      className={`${iconClass} text-3xl text-primary-500 hover:text-primary-600`}
+      className={`${iconClass} text-3xl text-primary-500 hover:text-primary-600 focus:text-primary-600 active:text-primary-700`}
     />
   );
 };

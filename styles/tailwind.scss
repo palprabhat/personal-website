@@ -95,4 +95,7 @@ p {
   .btn-secondary:hover {
     @apply border-primary-600 bg-primary-600 text-white;
   }
+  .btn-secondary:active {
+    @apply border-primary-700 bg-primary-700 text-white;
+  }
 }
