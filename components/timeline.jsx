@@ -4,7 +4,7 @@ const Timeline = () => {
   return (
     <section className="text-center section-p">
       <h2>Timeline</h2>
-      <div className="relative timeline max-w-4xl mx-auto mt-10">
+      <div className="relative timeline max-w-4xl mx-auto mt-20">
         <TimelineCard
           type="work"
           title="Zen3 Infosolution America Inc."

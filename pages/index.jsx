@@ -1,4 +1,5 @@
 import Hero from "@components/hero";
+import OtherProjects from "@components/otherProjects";
 import Technologies from "@components/technologies";
 import Timeline from "@components/timeline";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <Technologies />
       <Timeline />
+      <OtherProjects />
     </>
   );
 };

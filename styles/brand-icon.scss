@@ -1,10 +1,10 @@
 @font-face {
   font-family: "brand-icon";
-  src: url("../fonts/brand-icon.eot?rfif6c");
-  src: url("../fonts/brand-icon.eot?rfif6c#iefix") format("embedded-opentype"),
-    url("../fonts/brand-icon.ttf?rfif6c") format("truetype"),
-    url("../fonts/brand-icon.woff?rfif6c") format("woff"),
-    url("../fonts/brand-icon.svg?rfif6c#brand-icon") format("svg");
+  src: url("../fonts/brand-icon.eot?k6r5u3");
+  src: url("../fonts/brand-icon.eot?k6r5u3#iefix") format("embedded-opentype"),
+    url("../fonts/brand-icon.ttf?k6r5u3") format("truetype"),
+    url("../fonts/brand-icon.woff?k6r5u3") format("woff"),
+    url("../fonts/brand-icon.svg?k6r5u3#brand-icon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.brand-icon-link:before {
+  content: "\e903";
+}
 .brand-icon-github:before {
   content: "\e900";
 }

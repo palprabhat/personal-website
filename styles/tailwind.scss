@@ -82,6 +82,17 @@ p {
   }
 
   .grad-cap {
-    transform: rotate(-45deg) translateX(-1px) translateY(-75px);
+    transform: translateX(-57px) translateY(-53px);
+  }
+}
+
+@layer components {
+  .btn-secondary {
+    @apply border-solid border-2 py-2 px-8 border-primary-500 text-primary-500 rounded-full transition duration-300 ease-in-out;
+  }
+
+  .btn-secondary:hover,
+  .btn-secondary:hover {
+    @apply border-primary-600 bg-primary-600 text-white;
   }
 }
