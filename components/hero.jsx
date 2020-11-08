@@ -52,7 +52,7 @@ const Hero = () => {
             meet you.
           </h2>
           <p className="max-w-4xl mx-auto mt-8">
-            {`I'm a Full-stack web developer with more than 4 years of experience. Experienced with all stages of the development cycle for stand-alone applications as well as web applications. I love to bring life to the design, work on solving problems.`}
+            {`I'm a Full-stack web developer with more than 5 years of experience. Experienced with all stages of the development cycle for stand-alone applications as well as web applications. I love to bring life to the design, work on solving problems.`}
           </p>
         </div>
       </div>
