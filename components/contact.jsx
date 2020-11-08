@@ -41,9 +41,7 @@ const Contact = () => {
 
       setStage(STAGE.COMPELTE);
     } catch (err) {
-      setErrorMessage(
-        JSON.stringify("Something went wrong! Please try again.")
-      );
+      setErrorMessage("Something went wrong! Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -82,7 +80,7 @@ const Contact = () => {
               {/* <ReCaptcha name="captchaToken" /> */}
               <button
                 type="submit"
-                className="btn-secondary"
+                className="btn-primary"
                 disabled={isSubmitting}
               >
                 Send message
