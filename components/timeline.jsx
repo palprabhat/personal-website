@@ -13,7 +13,7 @@ const Timeline = () => {
           descriptions={[
             "Implemented scripts to automate various stages in the deployment process. Monitored and maintained the deployment process.",
             "Implemented front-end reusable components for the product 'Assignments' (a complete classroom management tool by Microsoft).",
-            "Worked on fixing bugs, writing efficient accessibility code and testing the application.",
+            "Worked on fixing bugs, writing efficient accessibility code, and testing the application.",
           ]}
         />
         <TimelineCard
@@ -24,7 +24,7 @@ const Timeline = () => {
           descriptions={[
             "Developed independent and reusable React components using ReasonML for 'Autoboard' (a merchant onboarding platform for ISOs).",
             "Developed scalable micro-service APIs.",
-            "Refactored entire application Autoboard, to create a fast, responsive and highly scalable web application.",
+            "Refactored entire application Autoboard, to create a fast, responsive, and highly scalable web application.",
             "Worked on the mobile app for Autoboard using React Native.",
           ]}
         />
@@ -40,7 +40,7 @@ const Timeline = () => {
           title="Siemens Healthineers"
           subTitle="Senior Systems Engineer"
           descriptions={[
-            "Implemented modules for a library which was being used by multiple projects process images scanned from a CT scanner machine.",
+            "Implemented modules for a library that was being used by multiple projects process images scanned from a CT scanner machine.",
             "Implemented automated test modules for multiple functionalities.",
           ]}
         />
@@ -51,7 +51,7 @@ const Timeline = () => {
           subTitle="Senior Software Engineer"
           descriptions={[
             "Build a web tool to compare databases and migrate data from one another, which helped the team to sync data with multiple environments.",
-            "Received ‘Best Innovative Thinking’ award for building a web tool to automate generation of more than 100 reports, thereby reducing the deliverable turn-around by 15%.",
+            "Received the ‘Best Innovative Thinking’ award for building a web tool to automate the generation of more than 100 reports, thereby reducing the deliverable turn-around by 15%.",
             "Designed and build a Project Tracing tool to manage different tasks of a project to make the process smooth.",
           ]}
         />

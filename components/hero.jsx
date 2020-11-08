@@ -1,6 +1,6 @@
 import Image from "next/image";
-import BrandLink from "./brandLink";
 import Link from "next/link";
+import BrandLink from "./brandLink";
 
 const Hero = () => {
   return (
@@ -8,8 +8,8 @@ const Hero = () => {
       <div className="text-center pt-11 md:pt-32">
         <div className="px-3 md:px-11 lg:px-16 flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto">
           <div className="pt-8 md:pt-0 md:text-left md:w-3/5">
-            <h2>Full stack web developer</h2>
-            <p>I design and build web application, and I love what I do.</p>
+            <h2>Full-stack web developer</h2>
+            <p>I design and build web applications, and I love what I do.</p>
             <div className="flex flex-col lg:flex-row mt-8 md:mt-4 lg:mt-8 mb-10">
               <div>
                 <BrandLink
@@ -52,7 +52,7 @@ const Hero = () => {
             meet you.
           </h2>
           <p className="max-w-4xl mx-auto mt-8">
-            {`I'm a Full-stack web developer with more than 4 years of experience. Experienced with all stages of the development cycle for stand-alone application as well as web applications. I love to bring life to the design, work on solving problems.`}
+            {`I'm a Full-stack web developer with more than 4 years of experience. Experienced with all stages of the development cycle for stand-alone applications as well as web applications. I love to bring life to the design, work on solving problems.`}
           </p>
         </div>
       </div>
