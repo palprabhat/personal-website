@@ -4,7 +4,7 @@ import {
 } from "react-google-recaptcha-v3";
 import React from "react";
 
-const CaptchaButton = ({ onVerifyCaptcha, register, name }) => {
+const CaptchaButton = ({ onVerifyCaptcha }) => {
   const { executeRecaptcha } = useGoogleReCaptcha();
   const clickHandler = async () => {
     if (!executeRecaptcha) {
@@ -16,22 +16,14 @@ const CaptchaButton = ({ onVerifyCaptcha, register, name }) => {
     onVerifyCaptcha(token);
   };
 
-  return (
-    <button name={name} ref={register} onClick={clickHandler}>
-      Recaptcha
-    </button>
-  );
+  return <button onClick={clickHandler}>Recaptcha</button>;
 };
 
-const ReCaptcha = ({ onVerifyCaptcha, name, register }) => (
+const ReCaptcha = ({ onVerifyCaptcha }) => (
   <GoogleReCaptchaProvider
     reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
   >
-    <CaptchaButton
-      onVerifyCaptcha={onVerifyCaptcha}
-      name={name}
-      ref={register}
-    />
+    <CaptchaButton onVerifyCaptcha={onVerifyCaptcha} />
   </GoogleReCaptchaProvider>
 );
 export default ReCaptcha;

@@ -16,7 +16,7 @@ const validationSchema = Yup.object({
     .email("Please provide a valid email"),
   subject: Yup.string().required("Please add a subject"),
   message: Yup.string().required("Please add a message"),
-  // captchaToken: Yup.string().required(),
+  captchaToken: Yup.string().required("Please verify you are not a bot"),
 });
 
 const Contact = () => {

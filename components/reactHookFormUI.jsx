@@ -59,14 +59,11 @@ export const TextArea = ({ register, name, error, ariaLabel, ...rest }) => {
   );
 };
 
-export const ReCaptcha = ({ register, name, error, setValue }) => {
+export const ReCaptcha = ({ name, error, setValue }) => {
+  // register({ name: "captchaToken" });
   return (
     <div className="my-2">
-      <ReCaptchaControl
-        name={name}
-        ref={register}
-        onVerifyCaptcha={(token) => setValue(name, token)}
-      />
+      <ReCaptchaControl onVerifyCaptcha={(token) => setValue(name, token)} />
       <ErrorText>{error && error.message}</ErrorText>
     </div>
   );
