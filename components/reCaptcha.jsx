@@ -16,7 +16,11 @@ const CaptchaButton = ({ onVerifyCaptcha, register, name }) => {
     onVerifyCaptcha(token);
   };
 
-  return <input name={name} ref={register} onClick={clickHandler} />;
+  return (
+    <button name={name} ref={register} onClick={clickHandler}>
+      Recaptcha
+    </button>
+  );
 };
 
 const ReCaptcha = ({ onVerifyCaptcha, name, register }) => (
