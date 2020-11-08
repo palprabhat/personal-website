@@ -27,7 +27,7 @@ export default async function handler(req, res) {
       const formData = new FormData();
 
       Object.entries(reqData).map(([key, value]) => {
-        formData.append(key, value);
+        if (key !== "reToken") formData.append(key, value);
       });
 
       const response = await fetch(process.env.CONTACT_API_URL, {
