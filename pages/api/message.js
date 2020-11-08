@@ -1,7 +1,7 @@
 const FormData = require("form-data");
 
 const validateHuman = async (token) => {
-  const secret = process.env.RECAPTCHA_SECRET_KEY;
+  const secret = process.env.RECAPTCHA_SITE_SECRET;
   const response = await fetch(
     `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`,
     {
@@ -17,6 +17,7 @@ export default async function handler(req, res) {
     const reqData = JSON.parse(req.body);
 
     const human = await validateHuman(reqData.reToken);
+    console.log(human);
     if (!human) {
       res.status(400);
       res.json({ errors: ["Please, you're not fooling us, bot."] });
