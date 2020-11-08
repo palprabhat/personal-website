@@ -65,7 +65,7 @@ const Contact = () => {
           />
         </div>
         <div
-          className="md:w-1/2 md:px-8 flex flex-col justify-end"
+          className="w-full md:w-1/2 md:px-8 flex flex-col justify-end"
           style={{ height: "450px" }}
         >
           {stage === STAGE.INITIAL ? (
