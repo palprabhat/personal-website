@@ -27,7 +27,7 @@ const Contact = () => {
   const onSubmit = async (data) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch("api/reCaptcha", {
+      const response = await fetch("api/message", {
         method: "POST",
         body: JSON.stringify(data),
       });
