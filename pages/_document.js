@@ -21,9 +21,9 @@ class MyDocument extends Document {
 
           <meta
             name="description"
-            content="Prabhat Kumar Pal; UI/UX Developer, Software Developer"
+            content="Portfolio | Full-stack web developer"
           />
-          <meta name="author" content="Prabhat Kumar Pal" />
+          <meta name="author" content="Prabhat Pal" />
           <meta
             name="keywords"
             content="prabhatpal,Prabhat,Prabhat Pal,Prabhat Kumar Pal,PrabhatKumarPal,pal,react,reactjs,javascript,nextjs,js,html,css,tailwindcss,UI,UX,Designer,UI Designer,Web Design,Web Page,Blewsoft,UI/UX Designer,Front End,Front End Developer,back-end,backend,backend developer,software developer,python,code,coder"
@@ -32,7 +32,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Prabhat Kumar Pal" />
           <meta
             property="og:description"
-            content="Prabhat Kumar Pal; UI/UX Developer, Software Developer"
+            content="Portfolio | Full-stack web developer"
           />
           <meta property="og:type" content="website" />
           <meta
