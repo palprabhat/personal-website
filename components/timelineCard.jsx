@@ -24,11 +24,13 @@ const TimelineCard = ({ title, subTitle, descriptions = [], period, type }) => {
         </div>
         <h3>{title}</h3>
         <h4>{subTitle}</h4>
-        <ul className="pt-4 list-disc pl-4">
-          {descriptions.map((description, i) => (
-            <li key={i}>{description}</li>
-          ))}
-        </ul>
+        {descriptions && (
+          <ul className="pt-4 list-disc pl-4">
+            {descriptions.map((description, i) => (
+              <li key={i}>{description}</li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

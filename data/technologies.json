@@ -1,0 +1,38 @@
+[
+  {
+    "src": "/images/tech_ReactJs.png",
+    "alt": "ReactJs",
+    "width": "164",
+    "height": "85"
+  },
+  {
+    "src": "/images/tech_NextJs.png",
+    "alt": "NextJs",
+    "width": "118",
+    "height": "70"
+  },
+  {
+    "src": "/images/tech_tailwindCss.png",
+    "alt": "tailwindCss",
+    "width": "299",
+    "height": "71"
+  },
+  {
+    "src": "/images/tech_Bootstrap.png",
+    "alt": "Bootstrap",
+    "width": "71",
+    "height": "70"
+  },
+  {
+    "src": "/images/tech_nodeJs.png",
+    "alt": "nodeJs",
+    "width": "114",
+    "height": "70"
+  },
+  {
+    "src": "/images/tech_Reason.png",
+    "alt": "Reason",
+    "width": "188",
+    "height": "70"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "src": "/images/project_mini-game_bouncy-ball.png",
+    "name": "Bouncy Ball",
+    "liveSiteLink": "https://mini-games.prabhatpal.com/BouncyBall/",
+    "githubLink": "https://github.com/palprabhat/mini-games/tree/master/BouncyBall",
+    "liveSiteLinkAriaLabel": "Play bouncy ball mini game",
+    "githubAriaLabel": "Bouncy ball mini game github link"
+  },
+  {
+    "src": "/images/project_machine-learning_mnistnumbers.png",
+    "name": "MNIST Numbers",
+    "liveSiteLink": "https://machine-learning.prabhatpal.com/MnistNumbers/",
+    "githubLink": "https://github.com/palprabhat/MachineLearningProjects/tree/master/MnistNumbers",
+    "liveSiteLinkAriaLabel": "Check live MNIST Numbers project here",
+    "githubAriaLabel": "MNIST Numbers project github link"
+  },
+  {
+    "src": "/images/project_machine-learning_bouncy-ball.png",
+    "name": "Bouncy Ball using Genetic Algorithm",
+    "liveSiteLink": "https://machine-learning.prabhatpal.com/BouncyBall/",
+    "githubLink": "https://github.com/palprabhat/MachineLearningProjects/tree/master/BouncyBall",
+    "liveSiteLinkAriaLabel": "Check learning algorithm for bouncy ball here",
+    "githubAriaLabel": "Learning algorithm for bouncy ball github link"
+  }
+]

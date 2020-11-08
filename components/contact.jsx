@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import { Form, InputField, TextArea } from "./reactHookFormUI";
 import ErrorText from "./errorText";
 import ReCaptcha from "react-google-recaptcha";
+import MyEmail from "./myEmail";
 
 const STAGE = {
   INITIAL: "initial",
@@ -113,20 +114,7 @@ const Contact = () => {
           )}
 
           <div className="flex flex-wrap justify-around mt-8">
-            <a
-              href="mailto:prabhatpal.14@gmail.com"
-              className="flex justify-center items-center px-2 group"
-            >
-              <span className="brand-icon-email mr-1 group-hover:text-primary-600 group-focus:text-primary-600" />
-              prabhatpal.14@gmail.com
-            </a>
-            <a
-              href="tel:+1 (214) 704 - 6768"
-              className="flex justify-center items-center px-2 group"
-            >
-              <span className="brand-icon-mobile mr-1 group-hover:text-primary-600 group-focus:text-primary-600" />
-              +1 (214) 704 - 6768
-            </a>
+            <MyEmail />
           </div>
         </div>
       </div>
