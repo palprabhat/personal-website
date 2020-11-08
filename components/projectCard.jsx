@@ -1,6 +1,13 @@
 import Image from "next/image";
 
-const ProjectCard = ({ src, name, liveSiteLink, githubLink }) => {
+const ProjectCard = ({
+  src,
+  name,
+  liveSiteLink,
+  liveSiteLinkAriaLabel,
+  githubLink,
+  githubAriaLabel,
+}) => {
   return (
     <div
       tabIndex="1"
@@ -16,12 +23,14 @@ const ProjectCard = ({ src, name, liveSiteLink, githubLink }) => {
             target="_blank"
             rel="noreferrer"
             className={`brand-icon-link text-3xl text-white hover:text-primary-400`}
+            aria-label={liveSiteLinkAriaLabel}
           />
           <a
             href={githubLink}
             target="_blank"
             rel="noreferrer"
             className={`brand-icon-github text-3xl text-white hover:text-primary-400`}
+            aria-label={githubAriaLabel}
           />
         </div>
       </div>

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section>
       <div className="mx-12 mt-3 hidden md:block">
-        <Image src="/images/logo.svg" width="72" height="72" />
+        <Image src="/images/logo.svg" width="72" height="72" alt="logo" />
       </div>
       <div className="text-center pt-11 md:pt-32">
         <div className="px-3 md:px-11 lg:px-16 flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto">
@@ -18,14 +18,17 @@ const Hero = () => {
                 <BrandLink
                   link="https://www.linkedin.com/in/prabhatpal14/"
                   iconClass="brand-icon-linkedin"
+                  ariaLabel="LinkedIn profile"
                 />
                 <BrandLink
                   link="https://github.com/palprabhat"
                   iconClass="brand-icon-github ml-12"
+                  ariaLabel="Github profile"
                 />
                 <BrandLink
                   link="https://twitter.com/prabhatpal14"
                   iconClass="brand-icon-twitter ml-12"
+                  ariaLabel="Twitter profile"
                 />
               </div>
               <div className="mt-6 lg:mt-0 lg:ml-12">

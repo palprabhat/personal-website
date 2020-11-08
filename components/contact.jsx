@@ -1,6 +1,13 @@
 import Image from "next/image";
+import { useState } from "react";
 import * as Yup from "yup";
-import { Form, InputField, TextArea } from "./reactHookFormUI";
+import { Form, InputField, TextArea, ReCaptcha } from "./reactHookFormUI";
+import ErrorText from "./errorText";
+
+const STAGE = {
+  INITIAL: "initial",
+  COMPELTE: "complete",
+};
 
 const validationSchema = Yup.object({
   name: Yup.string().required("Please provide your name"),
@@ -9,10 +16,38 @@ const validationSchema = Yup.object({
     .email("Please provide a valid email"),
   subject: Yup.string().required("Please add a subject"),
   message: Yup.string().required("Please add a message"),
+  captchaToken: Yup.string().required(),
 });
 
 const Contact = () => {
-  const onSubmit = (data) => console.log(data);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [stage, setStage] = useState(STAGE.INITIAL);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const onSubmit = async (data) => {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("api/reCaptcha", {
+        method: "POST",
+        body: JSON.stringify(data),
+      });
+
+      const responseData = await response.json();
+
+      if (responseData.error) {
+        setErrorMessage("Something went wrong! Please try again.");
+        return;
+      }
+
+      setStage(STAGE.COMPELTE);
+    } catch (err) {
+      setErrorMessage(
+        JSON.stringify("Something went wrong! Please try again.")
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section className="text-center section-p bg-primary-100">
@@ -26,18 +61,54 @@ const Contact = () => {
             alt="Contact"
           />
         </div>
-        <Form
-          onSubmit={onSubmit}
-          validationSchema={validationSchema}
-          className="md:w-1/2 md:px-8"
+        <div
+          className="md:w-1/2 md:px-8 flex flex-col justify-end"
+          style={{ height: "450px" }}
         >
-          <InputField name="name" placeHolder="Name" />
-          <InputField name="email" placeHolder="Email" />
-          <InputField name="subject" placeHolder="Subject" />
-          <TextArea name="message" placeHolder="Message" />
-          <button type="submit" className="btn-secondary">
-            Send message
-          </button>
+          {stage === STAGE.INITIAL ? (
+            <Form oonSubmit={onSubmit} validationSchema={validationSchema}>
+              <InputField name="name" placeHolder="Name" ariaLabel="Name" />
+              <InputField name="email" placeHolder="Email" ariaLabel="Email" />
+              <InputField
+                name="subject"
+                placeHolder="Subject"
+                ariaLabel="Subject"
+              />
+              <TextArea
+                name="message"
+                placeHolder="Message"
+                ariaLabel="Message"
+              />
+              <ReCaptcha name="captchaToken" />
+              <div
+                data-sitekey="6LfUXeAZAAAAACo9PzxdOQH4DbzoV5aZ5qo6kC1P"
+                className="g-recaptcha"
+              />
+              <button
+                type="submit"
+                className="btn-secondary"
+                disabled={isSubmitting}
+              >
+                Send message
+              </button>
+
+              {errorMessage && <ErrorText>{errorMessage}</ErrorText>}
+            </Form>
+          ) : (
+            <div>
+              <h3 className="mb-24">
+                Thank you for reaching out to me, I will get back to you soon.
+              </h3>
+              <button
+                type="button"
+                className="btn-secondary"
+                onClick={() => setStage(STAGE.INITIAL)}
+              >
+                Send another message
+              </button>
+            </div>
+          )}
+
           <div className="flex flex-wrap justify-around mt-8">
             <a
               href="mailto:prahatpal.14@gmail.com"
@@ -54,7 +125,7 @@ const Contact = () => {
               +1 (214) 704 - 6768
             </a>
           </div>
-        </Form>
+        </div>
       </div>
     </section>
   );
