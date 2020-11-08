@@ -16,7 +16,7 @@ const validationSchema = Yup.object({
     .email("Please provide a valid email"),
   subject: Yup.string().required("Please add a subject"),
   message: Yup.string().required("Please add a message"),
-  captchaToken: Yup.string().required("Please verify you are not a bot"),
+  // captchaToken: Yup.string().required("Please verify you are not a bot"),
 });
 
 const Contact = () => {
@@ -79,7 +79,7 @@ const Contact = () => {
                 placeHolder="Message"
                 ariaLabel="Message"
               />
-              <ReCaptcha name="captchaToken" />
+              {/* <ReCaptcha name="captchaToken" /> */}
               <button
                 type="submit"
                 className="btn-secondary"
