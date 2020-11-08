@@ -73,16 +73,30 @@ p {
 }
 
 .timeline {
+  @apply relative;
   &::before {
     content: "";
-    @apply absolute h-full bg-black w-1 left-0;
+    @apply absolute h-full bg-black w-1 mt-4 left-0;
     @screen md {
       @apply left-auto;
     }
   }
+}
 
-  .grad-cap {
-    transform: translateX(-57px) translateY(-53px);
+.grad-cap {
+  transform: translateX(-57px) translateY(-53px);
+}
+
+.timeline-card {
+  @apply relative;
+  &::before {
+    content: "";
+    @apply absolute h-8 w-8 rounded-full mt-12 bg-black inset-0;
+    left: -1.35rem;
+    @screen md {
+      @apply mx-auto;
+      left: 0.25rem;
+    }
   }
 }
 

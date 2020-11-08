@@ -3,7 +3,7 @@ import Image from "next/image";
 const TimelineCard = ({ title, subTitle, descriptions = [], period, type }) => {
   return (
     <div
-      className={`ml-2 md:ml-0 flex ${
+      className={`timeline-card ml-2 md:ml-0 flex ${
         type !== "work" ? "md:flex-row-reverse" : ""
       }`}
     >
