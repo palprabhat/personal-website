@@ -17,12 +17,7 @@ const CaptchaButton = ({ onVerifyCaptcha, register, name }) => {
   };
 
   return (
-    <button
-      name={name}
-      ref={register}
-      onClick={clickHandler}
-      className="hidden"
-    >
+    <button name={name} ref={register} onClick={clickHandler}>
       Recaptcha
     </button>
   );

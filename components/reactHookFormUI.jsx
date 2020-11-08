@@ -7,7 +7,7 @@ import ReCaptchaControl from "./reCaptcha";
 export const Form = ({ validationSchema, children, onSubmit, className }) => {
   const resolver = useYupValidationResolver(validationSchema);
   const methods = useForm({ resolver });
-  const { handleSubmit, register, errors } = methods;
+  const { handleSubmit, register, errors, setValue } = methods;
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={`w-full ${className}`}>
@@ -18,6 +18,7 @@ export const Form = ({ validationSchema, children, onSubmit, className }) => {
                 ...child.props,
                 register: register,
                 key: child.props.name,
+                setValue: setValue,
                 error: errors[`${child.props.name}`],
               },
             })
