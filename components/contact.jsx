@@ -66,7 +66,7 @@ const Contact = () => {
           style={{ height: "450px" }}
         >
           {stage === STAGE.INITIAL ? (
-            <Form oonSubmit={onSubmit} validationSchema={validationSchema}>
+            <Form onSubmit={onSubmit} validationSchema={validationSchema}>
               <InputField name="name" placeHolder="Name" ariaLabel="Name" />
               <InputField name="email" placeHolder="Email" ariaLabel="Email" />
               <InputField
