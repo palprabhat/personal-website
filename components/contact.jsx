@@ -114,11 +114,11 @@ const Contact = () => {
 
           <div className="flex flex-wrap justify-around mt-8">
             <a
-              href="mailto:prahatpal.14@gmail.com"
+              href="mailto:prabhatpal.14@gmail.com"
               className="flex justify-center items-center px-2 group"
             >
               <span className="brand-icon-email mr-1 group-hover:text-primary-600 group-focus:text-primary-600" />
-              prahatpal.14@gmail.com
+              prabhatpal.14@gmail.com
             </a>
             <a
               href="tel:+1 (214) 704 - 6768"
