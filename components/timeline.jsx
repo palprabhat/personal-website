@@ -12,7 +12,7 @@ const Timeline = () => {
           subTitle="Build Engineer"
           descriptions={[
             "Implemented scripts to automate various stages in the deployment process. Monitored and maintained the deployment process.",
-            "Implemented front-end reusable components for the product 'Assignments' (– a complete classroom management tool by Microsoft).",
+            "Implemented front-end reusable components for the product 'Assignments' (a complete classroom management tool by Microsoft).",
             "Worked on fixing bugs, writing efficient accessibility code and testing the application.",
           ]}
         />
@@ -22,7 +22,7 @@ const Timeline = () => {
           title="Tantrum Street LLC"
           subTitle="Software Engineer"
           descriptions={[
-            "Developed independent and reusable React components using ReasonML for 'Autoboard' (– a merchant onboarding platform for ISOs).",
+            "Developed independent and reusable React components using ReasonML for 'Autoboard' (a merchant onboarding platform for ISOs).",
             "Developed scalable micro-service APIs.",
             "Refactored entire application Autoboard, to create a fast, responsive and highly scalable web application.",
             "Worked on the mobile app for Autoboard using React Native.",
