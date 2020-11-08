@@ -17,7 +17,6 @@ export default async function handler(req, res) {
     const reqData = JSON.parse(req.body);
 
     const human = await validateHuman(reqData.reToken);
-    console.log(human);
     if (!human) {
       res.status(400).send({ error: "Could not verify you as human" });
       return;
