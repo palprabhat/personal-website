@@ -7,6 +7,7 @@ const Timeline = () => {
       <div className="relative timeline max-w-4xl mx-auto mt-20">
         <TimelineCard
           type="work"
+          period="Dec 2019 - Present"
           title="Zen3 Infosolution America Inc."
           subTitle="Build Engineer"
           descriptions={[
@@ -16,6 +17,7 @@ const Timeline = () => {
         />
         <TimelineCard
           type="work"
+          period="Aug 2018 - Dec 2019"
           title="Tantrum Street LLC"
           subTitle="Software Engineer"
           descriptions={[
@@ -27,11 +29,13 @@ const Timeline = () => {
         />
         <TimelineCard
           type="education"
+          period="Aug 2017 - May 2019"
           title="Southern Methodist University"
           subTitle="Master's in Computer Science"
         />
         <TimelineCard
           type="work"
+          period="Sep 2016 - Jul 2017"
           title="Siemens Healthineers"
           subTitle="Senior Systems Engineer"
           descriptions={[
@@ -41,6 +45,7 @@ const Timeline = () => {
         />
         <TimelineCard
           type="work"
+          period="Jun 2014 - Sep 2016"
           title="Capgemini"
           subTitle="Senior Software Engineer"
           descriptions={[

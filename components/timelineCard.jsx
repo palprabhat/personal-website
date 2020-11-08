@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const TimelineCard = ({ title, subTitle, descriptions = [], type }) => {
+const TimelineCard = ({ title, subTitle, descriptions = [], period, type }) => {
   return (
     <div
       className={`ml-2 md:ml-0 flex ${
@@ -19,6 +19,9 @@ const TimelineCard = ({ title, subTitle, descriptions = [], type }) => {
             <Image src="/images/graduation_cap.svg" width="84" height="86" />
           </div>
         )}
+        <div className="text-right text-gray-700 text-sm uppercasep">
+          {period}
+        </div>
         <h3>{title}</h3>
         <h4>{subTitle}</h4>
         <ul className="pt-4 list-disc pl-4">
