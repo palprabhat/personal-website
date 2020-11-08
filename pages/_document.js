@@ -38,7 +38,7 @@ class MyDocument extends Document {
           <meta
             property="og:image"
             itemProp="image"
-            content="http://www.prabhatpal.com/meta-images/profilepic.jpg"
+            content="http://www.prabhatpal.com/_next/image?url=%2Fimages%2Flogo.svg"
           />
           <meta property="og:image:width" content="255" />
           <meta property="og:image:height" content="255" />
