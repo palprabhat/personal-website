@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import * as Yup from "yup";
-import { Form, InputField, TextArea, ReCaptcha } from "./reactHookFormUI";
+import { Form, InputField, TextArea } from "./reactHookFormUI";
 import ErrorText from "./errorText";
+import ReCaptcha from "react-google-recaptcha";
 
 const STAGE = {
   INITIAL: "initial",
@@ -16,20 +17,24 @@ const validationSchema = Yup.object({
     .email("Please provide a valid email"),
   subject: Yup.string().required("Please add a subject"),
   message: Yup.string().required("Please add a message"),
-  // captchaToken: Yup.string().required("Please verify you are not a bot"),
 });
 
 const Contact = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const [stage, setStage] = useState(STAGE.INITIAL);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const reCaptchaRef = useRef();
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
+
+    const reToken = await reCaptchaRef.current.executeAsync();
+    reCaptchaRef.current.reset();
+
     try {
       const response = await fetch("api/message", {
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, reToken }),
       });
 
       const responseData = await response.json();
@@ -77,7 +82,11 @@ const Contact = () => {
                 placeHolder="Message"
                 ariaLabel="Message"
               />
-              {/* <ReCaptcha name="captchaToken" /> */}
+              <ReCaptcha
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                size="invisible"
+                ref={reCaptchaRef}
+              />
               <button
                 type="submit"
                 className="btn-primary"

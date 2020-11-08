@@ -2,12 +2,11 @@ import { Children, createElement } from "react";
 import { useForm } from "react-hook-form";
 import { useYupValidationResolver } from "@hooks/yupValidationResolver";
 import ErrorText from "./errorText";
-import ReCaptchaControl from "./reCaptcha";
 
 export const Form = ({ validationSchema, children, onSubmit, className }) => {
   const resolver = useYupValidationResolver(validationSchema);
   const methods = useForm({ resolver });
-  const { handleSubmit, register, errors, setValue } = methods;
+  const { handleSubmit, register, errors } = methods;
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={`w-full ${className}`}>
@@ -18,7 +17,6 @@ export const Form = ({ validationSchema, children, onSubmit, className }) => {
                 ...child.props,
                 register: register,
                 key: child.props.name,
-                setValue: setValue,
                 error: errors[`${child.props.name}`],
               },
             })
@@ -54,16 +52,6 @@ export const TextArea = ({ register, name, error, ariaLabel, ...rest }) => {
         rows="3"
         className="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
       />
-      <ErrorText>{error && error.message}</ErrorText>
-    </div>
-  );
-};
-
-export const ReCaptcha = ({ name, error, setValue }) => {
-  // register({ name: "captchaToken" });
-  return (
-    <div className="my-2">
-      <ReCaptchaControl onVerifyCaptcha={(token) => setValue(name, token)} />
       <ErrorText>{error && error.message}</ErrorText>
     </div>
   );
