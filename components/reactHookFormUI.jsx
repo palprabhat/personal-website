@@ -65,7 +65,7 @@ export const ReCaptcha = ({ register, name, error, setValue }) => {
       <ReCaptchaControl
         name={name}
         ref={register}
-        onVerifyCaptcha={(token) => setValue(token)}
+        onVerifyCaptcha={(token) => setValue(name, token)}
       />
       <ErrorText>{error && error.message}</ErrorText>
     </div>

@@ -16,7 +16,7 @@ const validationSchema = Yup.object({
     .email("Please provide a valid email"),
   subject: Yup.string().required("Please add a subject"),
   message: Yup.string().required("Please add a message"),
-  captchaToken: Yup.string().required(),
+  // captchaToken: Yup.string().required(),
 });
 
 const Contact = () => {
@@ -80,10 +80,6 @@ const Contact = () => {
                 ariaLabel="Message"
               />
               <ReCaptcha name="captchaToken" />
-              <div
-                data-sitekey="6LfUXeAZAAAAACo9PzxdOQH4DbzoV5aZ5qo6kC1P"
-                className="g-recaptcha"
-              />
               <button
                 type="submit"
                 className="btn-secondary"
