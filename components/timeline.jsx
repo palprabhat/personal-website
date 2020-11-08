@@ -11,8 +11,9 @@ const Timeline = () => {
           title="Zen3 Infosolution America Inc."
           subTitle="Build Engineer"
           descriptions={[
-            "Write script to automate various stages in the deployment process. Monitor and maintain the deployment process. - Build front-end reusable components for the product.",
-            "Build front-end reusable components for the product 'Assignments' (– a complete classroom management tool by Microsoft). Work on fixing bugs, writing efficient accessibility code and testing the application.",
+            "Implemented scripts to automate various stages in the deployment process. Monitored and maintained the deployment process.",
+            "Implemented front-end reusable components for the product 'Assignments' (– a complete classroom management tool by Microsoft).",
+            "Worked on fixing bugs, writing efficient accessibility code and testing the application.",
           ]}
         />
         <TimelineCard
@@ -53,6 +54,12 @@ const Timeline = () => {
             "Received ‘Best Innovative Thinking’ award for building a web tool to automate generation of more than 100 reports, thereby reducing the deliverable turn-around by 15%.",
             "Designed and build a Project Tracing tool to manage different tasks of a project to make the process smooth.",
           ]}
+        />
+        <TimelineCard
+          type="education"
+          period="Aug 2009 - May 2013"
+          title="Biju Patnaik University of Technology"
+          subTitle="Bachelor of Technology in Computer Science & Engineering"
         />
       </div>
     </section>
