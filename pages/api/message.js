@@ -19,8 +19,7 @@ export default async function handler(req, res) {
     const human = await validateHuman(reqData.reToken);
     console.log(human);
     if (!human) {
-      res.status(400);
-      res.json({ errors: ["Please, you're not fooling us, bot."] });
+      res.status(400).send({ error: "Could not verify you as human" });
       return;
     }
 

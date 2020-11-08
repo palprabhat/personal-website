@@ -40,7 +40,7 @@ const Contact = () => {
       const responseData = await response.json();
 
       if (responseData.error) {
-        setErrorMessage("Something went wrong! Please try again.");
+        setErrorMessage(responseData.error);
         return;
       }
 
