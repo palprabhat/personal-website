@@ -70,16 +70,16 @@ const Contact = () => {
         >
           {stage === STAGE.INITIAL ? (
             <Form onSubmit={onSubmit} validationSchema={validationSchema}>
-              <InputField name="name" placeHolder="Name" ariaLabel="Name" />
-              <InputField name="email" placeHolder="Email" ariaLabel="Email" />
+              <InputField name="name" placeholder="Name" ariaLabel="Name" />
+              <InputField name="email" placeholder="Email" ariaLabel="Email" />
               <InputField
                 name="subject"
-                placeHolder="Subject"
+                placeholder="Subject"
                 ariaLabel="Subject"
               />
               <TextArea
                 name="message"
-                placeHolder="Message"
+                placeholder="Message"
                 ariaLabel="Message"
               />
               <ReCaptcha
