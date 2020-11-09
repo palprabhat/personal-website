@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import FeelingProud from "./animation/feelingProud";
 import BrandLink from "./brandLink";
 
 const Hero = () => {
@@ -37,13 +37,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center w-4/5 md:w-2/5">
-            <Image
-              src="/images/feeling_proud.svg"
-              alt="Computer desk"
-              width={710}
-              height={690}
-            />
+          <div className="flex w-4/5 md:w-2/5">
+            <FeelingProud />
           </div>
         </div>
         <div className="bg-primary-100 mt-8 md:mt-0 margin-top-neg section-p">
