@@ -64,7 +64,7 @@ class MyDocument extends Document {
           <meta property="og:url" content="http://www.prabhatpal.com" />
           <meta name="twitter:card" content="summary" />
 
-          {process.env.NODE_ENV === "production" &&
+          {/* {process.env.NODE_ENV === "production" &&
           process.env.NEXT_PUBLIC_GA_TRACKING_ID ? (
             <>
               <script
@@ -84,7 +84,7 @@ class MyDocument extends Document {
                 }}
               />
             </>
-          ) : null}
+          ) : null} */}
         </Head>
 
         <body>
