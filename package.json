@@ -1,12 +1,14 @@
 {
   "name": "personal-website",
+  "homepage": "https://www.prabhatpal.com",
+  "author": "Prabhat Pal",
+  "description": "Personal website | Portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next build && next export"
+    "start": "next start"
   },
   "dependencies": {
     "form-data": "^3.0.0",
