@@ -1,57 +1,15 @@
 import Image from "next/image";
-import { useRef, useState } from "react";
-import * as Yup from "yup";
-import { Form, InputField, TextArea } from "./reactHookFormUI";
-import ErrorText from "./errorText";
-import ReCaptcha from "react-google-recaptcha";
+import { useState } from "react";
 import MyEmail from "./myEmail";
+import ContactForm from "./contactForm";
 
 const STAGE = {
   INITIAL: "initial",
   COMPELTE: "complete",
 };
 
-const validationSchema = Yup.object({
-  name: Yup.string().required("Please provide your name"),
-  email: Yup.string()
-    .required("Please provide your email")
-    .email("Please provide a valid email"),
-  subject: Yup.string().required("Please add a subject"),
-  message: Yup.string().required("Please add a message"),
-});
-
 const Contact = () => {
-  const [errorMessage, setErrorMessage] = useState("");
   const [stage, setStage] = useState(STAGE.INITIAL);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const reCaptchaRef = useRef();
-
-  const onSubmit = async (data) => {
-    setIsSubmitting(true);
-
-    const reToken = await reCaptchaRef.current.executeAsync();
-    reCaptchaRef.current.reset();
-
-    try {
-      const response = await fetch("api/message", {
-        method: "POST",
-        body: JSON.stringify({ ...data, reToken }),
-      });
-
-      const responseData = await response.json();
-
-      if (responseData.error) {
-        setErrorMessage(responseData.error);
-        return;
-      }
-
-      setStage(STAGE.COMPELTE);
-    } catch (err) {
-      setErrorMessage("Something went wrong! Please try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <section className="text-center section-p bg-primary-100">
@@ -70,34 +28,7 @@ const Contact = () => {
           style={{ height: "450px" }}
         >
           {stage === STAGE.INITIAL ? (
-            <Form onSubmit={onSubmit} validationSchema={validationSchema}>
-              <InputField name="name" placeholder="Name" ariaLabel="Name" />
-              <InputField name="email" placeholder="Email" ariaLabel="Email" />
-              <InputField
-                name="subject"
-                placeholder="Subject"
-                ariaLabel="Subject"
-              />
-              <TextArea
-                name="message"
-                placeholder="Message"
-                ariaLabel="Message"
-              />
-              <ReCaptcha
-                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-                size="invisible"
-                ref={reCaptchaRef}
-              />
-              <button
-                type="submit"
-                className="btn-primary"
-                disabled={isSubmitting}
-              >
-                Send message
-              </button>
-
-              {errorMessage && <ErrorText>{errorMessage}</ErrorText>}
-            </Form>
+            <ContactForm submitted={() => setStage(STAGE.COMPELTE)} />
           ) : (
             <div>
               <h3 className="mb-24">
