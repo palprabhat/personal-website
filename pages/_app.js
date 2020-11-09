@@ -9,7 +9,10 @@ const MyApp = ({ Component, pageProps }) => {
   const router = useRouter();
 
   useEffect(() => {
-    if (process.env.NODE_ENV === "production") {
+    if (
+      process.env.NODE_ENV === "production" &&
+      process.env.NEXT_PUBLIC_GA_TRACKING_ID
+    ) {
       const handleRouteChange = (url) => {
         gtag.pageview(url);
       };
