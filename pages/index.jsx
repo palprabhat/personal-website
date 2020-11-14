@@ -4,12 +4,14 @@ import Technologies from "@components/technologies";
 import Timeline from "@components/timeline";
 import Contact from "@components/contact";
 import PageLayout from "@components/pageLayout";
+import RecentProjects from "@components/recentProjects";
 
 const Home = () => {
   return (
     <PageLayout>
       <Hero />
       <Technologies />
+      <RecentProjects />
       <Timeline />
       <OtherProjects />
       <Contact />

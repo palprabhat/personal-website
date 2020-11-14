@@ -18,13 +18,15 @@ const ProjectCard = ({
           {name}
         </h3>
         <div className="flex justify-around w-1/2 opacity-0 transition duration-200 ease-in group-hover:opacity-100 group-focus:opacity-100">
-          <a
-            href={liveSiteLink}
-            target="_blank"
-            rel="noreferrer"
-            className={`brand-icon-link text-3xl text-white hover:text-primary-400`}
-            aria-label={liveSiteLinkAriaLabel}
-          />
+          {liveSiteLink && (
+            <a
+              href={liveSiteLink}
+              target="_blank"
+              rel="noreferrer"
+              className={`brand-icon-link text-3xl text-white hover:text-primary-400`}
+              aria-label={liveSiteLinkAriaLabel}
+            />
+          )}
           <a
             href={githubLink}
             target="_blank"

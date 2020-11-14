@@ -1,0 +1,16 @@
+[
+  {
+    "src": "/projects/website.png",
+    "name": "Portfolio",
+    "githubLink": "https://github.com/palprabhat/personal-website",
+    "githubAriaLabel": "Personal website github link"
+  },
+  {
+    "src": "/projects/weather-app.gif",
+    "name": "Weather App",
+    "liveSiteLink": "/projects/weather-app",
+    "githubLink": "https://github.com/palprabhat/weather-app",
+    "liveSiteLinkAriaLabel": "Weather app",
+    "githubAriaLabel": "Weather app github link"
+  }
+]
