@@ -1,16 +1,21 @@
-import ProjectCard from "./projectCard";
+import NewProjectCard from "./newProjectCard";
 import projects from "@data/recentProjects.json";
 
 const RecentProjects = () => {
   return (
     <section className="text-center section-p">
       <h2>My Recent Projects</h2>
-      <div className="max-w-6xl mx-auto mt-10 flex flex-wrap justify-around">
+      <p className="mt-10">
+        {"Here are a few design projects I've worked on recently."}
+      </p>
+      <div className="max-w-6xl mx-auto flex flex-wrap justify-around">
         {projects.map(
           (
             {
               src,
               name,
+              description,
+              tech,
               liveSiteLink,
               githubLink,
               liveSiteLinkAriaLabel,
@@ -18,10 +23,12 @@ const RecentProjects = () => {
             },
             i
           ) => (
-            <ProjectCard
+            <NewProjectCard
               key={i}
               src={src}
               name={name}
+              description={description}
+              tech={tech}
               liveSiteLink={liveSiteLink}
               githubLink={githubLink}
               liveSiteLinkAriaLabel={liveSiteLinkAriaLabel}

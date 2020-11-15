@@ -1,16 +1,20 @@
 [
   {
-    "src": "/projects/website.png",
-    "name": "Portfolio",
-    "githubLink": "https://github.com/palprabhat/personal-website",
-    "githubAriaLabel": "Personal website github link"
-  },
-  {
     "src": "/projects/weather-app.gif",
     "name": "Weather App",
     "liveSiteLink": "/projects/weather-app",
     "githubLink": "https://github.com/palprabhat/weather-app",
     "liveSiteLinkAriaLabel": "Weather app",
-    "githubAriaLabel": "Weather app github link"
+    "githubAriaLabel": "Weather app github link",
+    "description": "Search your location and get current weather with hourly & daily forecast.",
+    "tech": "NextJs, TailwindCss"
+  },
+  {
+    "src": "/projects/website.png",
+    "name": "Portfolio",
+    "githubLink": "https://github.com/palprabhat/personal-website",
+    "githubAriaLabel": "Personal website github link",
+    "description": "Website to present myself.",
+    "tech": "NextJs, TailwindCss, Framer Motion"
   }
 ]
