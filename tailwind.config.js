@@ -1,7 +1,7 @@
 module.exports = {
   future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
   },
   purge: [
     "./components/**/*.jsx",
@@ -17,14 +17,6 @@ module.exports = {
       spacing: {
         9: "2.25rem",
         11: "2.75rem",
-      },
-      flexGrow: {
-        1: "1",
-        2: "2",
-        3: "3",
-        4: "4",
-        5: "5",
-        6: "6",
       },
       colors: {
         black: "#2f2e41",

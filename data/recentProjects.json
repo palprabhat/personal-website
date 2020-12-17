@@ -2,7 +2,7 @@
   {
     "src": "/projects/weather-app.gif",
     "name": "Weather App",
-    "liveSiteLink": "/projects/weather-app",
+    "liveSiteLink": "https://weather-app-next-js.vercel.app/",
     "githubLink": "https://github.com/palprabhat/weather-app",
     "liveSiteLinkAriaLabel": "Weather app",
     "githubAriaLabel": "Weather app github link",
