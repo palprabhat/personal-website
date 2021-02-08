@@ -6,7 +6,7 @@
     "githubLink": "https://github.com/palprabhat/places-to-see",
     "liveSiteLinkAriaLabel": "Places to see",
     "githubAriaLabel": "Places to see github link",
-    "description": "Add some of you favourite place here so that other can check out. This site uses Firebase Auth to allow users to add a new place. Users can edit or delete only the places which they have added. Any user can view the places added to this site.",
+    "description": "Add some of your favorite place here so that other can check out. This site uses Firebase Auth to allow users to add a new place. Users can edit or delete only the places which they have added. Any user can view the places added to this site.",
     "tech": "NextJs, React.js, TypeScript, Hooks, TailwindCss, Prisma, PostgreSQL, TypeGraphQL, Apollo Client, Apollo Server, Firebase Auth, Mapbox, Google Places, Cloudinary, Vercel"
   },
   {
