@@ -12,6 +12,36 @@
     "height": "70"
   },
   {
+    "src": "/images/tech_typescript.png",
+    "alt": "Typescript",
+    "width": "640",
+    "height": "193"
+  },
+  {
+    "src": "/images/tech_nodeJs.png",
+    "alt": "nodeJs",
+    "width": "114",
+    "height": "70"
+  },
+  {
+    "src": "/images/tech_auth0.png",
+    "alt": "Auth0",
+    "width": "600",
+    "height": "401"
+  },
+  {
+    "src": "/images/tech_firebase.png",
+    "alt": "Firebase",
+    "width": "1600",
+    "height": "820"
+  },
+  {
+    "src": "/images/tech_sass.png",
+    "alt": "sass",
+    "width": "1200",
+    "height": "900"
+  },
+  {
     "src": "/images/tech_tailwindCss.png",
     "alt": "tailwindCss",
     "width": "299",
@@ -23,12 +53,33 @@
     "width": "71",
     "height": "70"
   },
+
   {
-    "src": "/images/tech_nodeJs.png",
-    "alt": "nodeJs",
-    "width": "114",
-    "height": "70"
+    "src": "/images/tech_apollo.png",
+    "alt": "Apollo",
+    "width": "1467",
+    "height": "429"
   },
+
+  {
+    "src": "/images/tech_graphql.png",
+    "alt": "Graphql",
+    "width": "1000",
+    "height": "350"
+  },
+  {
+    "src": "/images/tech_postgre-sql.png",
+    "alt": "PostgreSQL",
+    "width": "765",
+    "height": "359"
+  },
+  {
+    "src": "/images/tech_prisma.png",
+    "alt": "Prisma",
+    "width": "550",
+    "height": "200"
+  },
+
   {
     "src": "/images/tech_Reason.png",
     "alt": "Reason",

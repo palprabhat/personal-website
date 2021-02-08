@@ -90,11 +90,11 @@ const NewProjectCard = ({
   const [isHovered, setHovered] = useState(false);
   return (
     <div
-      className="relative border border-gray-200 shadow-xs mt-8 rounded-xl transition duration-200 ease-in overflow-hidden"
+      className="relative border border-gray-200 shadow-xs mt-8 rounded-xl transition duration-200 ease-in overflow-hidden max-w-xs"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img src={src} width="275" className="object-cover object-top h-64" />
+      <img src={src} width="100%" className="object-cover object-top h-64" />
       <motion.div
         variants={slideUp}
         initial="hidden"
@@ -108,19 +108,19 @@ const NewProjectCard = ({
         >
           {name}
         </h3>
-        <motion.div
-          variants={smoothInTech}
-          className="px-3 text-left font-bold text-gray-800"
-        >
-          {tech}
+        <motion.div variants={smoothInTech}>
+          <div className="px-3 overflow-y-scroll" style={{ height: "250px" }}>
+            <div className="text-left font-bold text-gray-800">{tech}</div>
+            <div className="pt-4 text-lg text-justify">{description}</div>
+          </div>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           variants={smoothIn}
-          className="px-3 text-xl text-justify"
-          style={{ maxWidth: "275px" }}
+          className="px-3 text-xl text-justify max-w-xs"
+          // style={{ maxWidth: "275px" }}
         >
           {description}
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           variants={noAnimation}

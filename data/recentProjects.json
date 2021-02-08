@@ -1,5 +1,15 @@
 [
   {
+    "src": "/projects/places-to-see.png",
+    "name": "Places to see",
+    "liveSiteLink": "https://places-to-see.vercel.app/",
+    "githubLink": "https://github.com/palprabhat/places-to-see",
+    "liveSiteLinkAriaLabel": "Places to see",
+    "githubAriaLabel": "Places to see github link",
+    "description": "Add some of you favourite place here so that other can check out. This site uses Firebase Auth to allow users to add a new place. Users can edit or delete only the places which they have added. Any user can view the places added to this site.",
+    "tech": "NextJs, React.js, TypeScript, Hooks, TailwindCss, Prisma, PostgreSQL, TypeGraphQL, Apollo Client, Apollo Server, Firebase Auth, Mapbox, Google Places, Cloudinary, Vercel"
+  },
+  {
     "src": "/projects/weather-app.gif",
     "name": "Weather App",
     "liveSiteLink": "https://weather-app-next-js.vercel.app/",
@@ -7,7 +17,7 @@
     "liveSiteLinkAriaLabel": "Weather app",
     "githubAriaLabel": "Weather app github link",
     "description": "Search your location and get current weather with hourly & daily forecast.",
-    "tech": "NextJs, TailwindCss"
+    "tech": "NextJs, React.js, Hooks, TailwindCss"
   },
   {
     "src": "/projects/website.png",
@@ -15,6 +25,6 @@
     "githubLink": "https://github.com/palprabhat/personal-website",
     "githubAriaLabel": "Personal website github link",
     "description": "Website to present myself.",
-    "tech": "NextJs, TailwindCss, Framer Motion"
+    "tech": "NextJs, React.js, Hooks, TailwindCss, Framer Motion"
   }
 ]
