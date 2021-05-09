@@ -1,7 +1,14 @@
 [
   {
     "type": "work",
-    "period": "Dec 2019 - Present",
+    "period": "Apr 2021 - Present",
+    "title": "Osaro Inc.",
+    "subTitle": "Web Developer",
+    "descriptions": []
+  },
+  {
+    "type": "work",
+    "period": "Dec 2019 - Apr 2021",
     "title": "Zen3 Infosolution America Inc.",
     "subTitle": "Build Engineer",
     "descriptions": [
