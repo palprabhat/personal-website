@@ -5,7 +5,7 @@ import ContactForm from "./contactForm";
 
 const STAGE = {
   INITIAL: "initial",
-  COMPELTE: "complete",
+  COMPLETE: "complete",
 };
 
 const Contact = () => {
@@ -28,7 +28,7 @@ const Contact = () => {
           style={{ height: "450px" }}
         >
           {stage === STAGE.INITIAL ? (
-            <ContactForm submitted={() => setStage(STAGE.COMPELTE)} />
+            <ContactForm submitted={() => setStage(STAGE.COMPLETE)} />
           ) : (
             <div>
               <h3 className="mb-24">

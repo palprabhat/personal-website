@@ -1,0 +1,14 @@
+export const heroHeading = "hero-heading";
+export const heroPara = "hero-para";
+export const linkedInIcon = "linkedIn-icon";
+export const githubIcon = "github-icon";
+export const twitterIcon = "twitter-icon";
+export const downloadLink = "download-link";
+export const feelingProudSvg = "feeling-proud-svg";
+export const introHeading = "intro-heading";
+export const introDescription = "intro-description";
+export const brandLinkTest = "intro-description";
+export const errorTextTest = "error-test-id";
+export const myEmail = "my-email";
+export const headerTestId = "header-test-id";
+export const logoId = "logo-id";

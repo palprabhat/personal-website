@@ -114,13 +114,6 @@ const NewProjectCard = ({
             <div className="pt-4 text-lg text-justify">{description}</div>
           </div>
         </motion.div>
-        {/* <motion.div
-          variants={smoothIn}
-          className="px-3 text-xl text-justify max-w-xs"
-          // style={{ maxWidth: "275px" }}
-        >
-          {description}
-        </motion.div> */}
 
         <motion.div
           variants={noAnimation}

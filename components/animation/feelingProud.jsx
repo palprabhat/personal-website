@@ -78,7 +78,7 @@ const humanFigureFall = {
   },
 };
 
-const FeelingProud = () => {
+const FeelingProud = ({ testId }) => {
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -89,6 +89,7 @@ const FeelingProud = () => {
       overflow="visible"
       initial="hidden"
       animate="visible"
+      data-testid={testId}
     >
       <motion.g variants={slideIn}>
         <polygon
