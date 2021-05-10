@@ -23,7 +23,8 @@ jobs:
           yarn
           yarn build
           yarn test
-          echo github.event.pull_request.merged
+      - name: Print
+        run: echo github.event.pull_request.merged
 
   deploy:
     if: github.event.pull_request.merged == true
