@@ -13,11 +13,8 @@ describe("BrandLink Component", () => {
     const link = screen.queryByTestId(brandLinkTest);
 
     expect(link).toBeInTheDocument();
-    expect(link).toHaveAttribute("href", expect.stringContaining(testLink));
-    expect(link).toHaveAttribute(
-      "aria-label",
-      expect.stringContaining(testLabel)
-    );
+    expect(link).toHaveAttribute("href", testLink);
+    expect(link).toHaveAttribute("aria-label", testLabel);
   });
 });
 
