@@ -5,6 +5,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+    types: [closed]
   pull_request_target:
   workflow_dispatch:
 
@@ -22,14 +23,15 @@ jobs:
           yarn
           yarn build
           yarn test
+          echo github.event.pull_request.merged
 
   deploy:
+    if: github.event.pull_request.merged == true
     needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: amondnet/vercel-action@v20
-        if: github.event.pull_request.merged == true
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-args: '--prod'
