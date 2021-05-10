@@ -37,7 +37,7 @@ describe("Hero Component", () => {
 
     expect(linkedInIcon).toHaveAttribute(
       "href",
-      "https://www.linkedin.com/in/prabhatpal1/"
+      "https://www.linkedin.com/in/prabhatpal14/"
     );
     expect(githubIcon).toHaveAttribute("href", "https://github.com/palprabhat");
     expect(twitterIcon).toHaveAttribute(
