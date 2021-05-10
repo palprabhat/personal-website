@@ -19,7 +19,6 @@ jobs:
       - name: Install, build, and Test
         run: |
           yarn
-          yarn build --if-present
           yarn test
 
   deploy_now:
