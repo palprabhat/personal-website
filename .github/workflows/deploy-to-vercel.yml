@@ -19,6 +19,14 @@ jobs:
           yarn build
           yarn test
 
+      - name: Upload test coverage to codeclimate
+        uses: paambaati/codeclimate-action@v2.7.2
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageCommand: yarn test:coverage
+          coverageLocations: ${{github.workspace}}/test_reports/coverage/lcov.info:lcov
+
   deploy:
     needs: build-and-test
     runs-on: ubuntu-latest
