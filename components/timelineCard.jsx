@@ -19,9 +19,7 @@ const TimelineCard = ({ title, subTitle, descriptions = [], period, type }) => {
             <Image src="/images/graduation_cap.svg" width="84" height="86" />
           </div>
         )}
-        <div className="text-right text-gray-700 text-sm uppercasep">
-          {period}
-        </div>
+        <div className="text-right text-gray-700 text-sm">{period}</div>
         <h3>{title}</h3>
         <h4>{subTitle}</h4>
         {descriptions && (

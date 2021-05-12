@@ -1,4 +1,3 @@
-import Image from "next/image";
 import technologiesData from "@data/technologies.json";
 
 const Technologies = () => {
