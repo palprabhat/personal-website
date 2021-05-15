@@ -23,8 +23,12 @@ const ContactForm = ({ submitted }) => {
   const onSubmit = useCallback(async (data) => {
     setIsSubmitting(true);
 
-    const reToken = await reCaptchaRef.current.executeAsync();
-    reCaptchaRef.current.reset();
+    let reToken = "";
+    /* istanbul ignore next */
+    if (process.env.NODE_ENV.toLowerCase() !== "test") {
+      reToken = await reCaptchaRef.current.executeAsync();
+      reCaptchaRef.current.reset();
+    }
 
     try {
       const response = await fetch("api/message", {

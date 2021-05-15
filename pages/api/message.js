@@ -12,6 +12,31 @@ const validateHuman = async (token) => {
   return data.success;
 };
 
+const sendMessage = async (req) => {
+  try {
+    const formData = new FormData();
+
+    Object.entries(req).map(([key, value]) => {
+      if (key !== "reToken") formData.append(key, value);
+    });
+
+    const response = await fetch(process.env.CONTACT_API_URL, {
+      method: "POST",
+      body: formData,
+    });
+
+    const responseData = await response.json();
+
+    if (responseData.result === "success") {
+      return responseData.data;
+    }
+    return null;
+  } catch (err) {
+    console.error(err);
+    return null;
+  }
+};
+
 export default async function handler(req, res) {
   if (req.method === "POST") {
     const reqData = JSON.parse(req.body);
@@ -22,27 +47,11 @@ export default async function handler(req, res) {
       return;
     }
 
-    try {
-      const formData = new FormData();
+    const resData = await sendMessage(reqData);
 
-      Object.entries(reqData).map(([key, value]) => {
-        if (key !== "reToken") formData.append(key, value);
-      });
-
-      const response = await fetch(process.env.CONTACT_API_URL, {
-        method: "POST",
-        body: formData,
-      });
-      const responseData = await response.json();
-
-      if (responseData.result === "success") {
-        res.status(200).send({ data: responseData.data });
-        return;
-      }
-
-      res.status(500).send({ error: "Unable to send message" });
-    } catch (err) {
-      console.error(err);
+    if (resData) {
+      res.status(200).send({ data: resData });
+    } else {
       res.status(500).send({ error: "Unable to send message" });
     }
   } else {
