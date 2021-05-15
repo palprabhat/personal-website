@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Form, InputField, TextArea } from "./reactHookFormUI";
 import ReCaptcha from "react-google-recaptcha";
 import ErrorText from "./errorText";
@@ -19,6 +19,13 @@ const ContactForm = ({ submitted }) => {
   const [errorMessage, setErrorMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const reCaptchaRef = useRef();
+
+  useEffect(() => {
+    return () => {
+      setIsSubmitting(false);
+      setErrorMessage("");
+    };
+  }, []);
 
   const onSubmit = useCallback(async (data) => {
     setIsSubmitting(true);

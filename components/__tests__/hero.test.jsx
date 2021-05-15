@@ -17,7 +17,12 @@ beforeEach(() => {
 });
 
 describe("Hero Component", () => {
-  it("renders correct content", () => {
+  it("matches snapshot", () => {
+    const { baseElement } = render(<Hero />);
+    expect(baseElement).toMatchSnapshot();
+  });
+
+  it("renders heading", () => {
     const heading = screen.queryByTestId(heroHeading);
     const para = screen.queryByTestId(heroPara);
 

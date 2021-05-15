@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component renders correct content 1`] = `
+<body>
+  <div>
+    <div
+      class="mx-12 mt-3 hidden md:flex justify-between"
+      data-testid="header-test-id"
+    >
+      <div
+        style="max-width: 100%; width: 72px;"
+      >
+        <div
+          style="position: relative; padding-bottom: 100%;"
+        >
+          
+          <img
+            alt="logo"
+            class="__lazy"
+            data-src="/_next/image?url=%2Fimages%2Flogo.svg&w=320&q=75"
+            data-srcset="/_next/image?url=%2Fimages%2Flogo.svg&w=320&q=75 320w"
+            data-testid="logo-id"
+            style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+          />
+        </div>
+      </div>
+      <a
+        class="flex justify-center items-center px-2 group"
+        data-testid="my-email"
+        href="mailto:prabhatpal.14@gmail.com"
+      >
+        <span
+          class="brand-icon-email mr-1 group-hover:text-primary-600 group-focus:text-primary-600"
+        />
+        prabhatpal.14@gmail.com
+      </a>
+    </div>
+  </div>
+</body>
+`;

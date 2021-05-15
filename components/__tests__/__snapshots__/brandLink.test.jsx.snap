@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrandLink Component renders correct content 1`] = `
+<body>
+  <div>
+    <a
+      aria-label="Test Label"
+      class="undefined text-3xl text-primary-500 hover:text-primary-600 focus:text-primary-600 active:text-primary-700"
+      data-testid="intro-description"
+      href="https://prabhatpal.com/"
+      rel="noreferrer"
+      target="_blank"
+    />
+  </div>
+</body>
+`;
