@@ -9,10 +9,10 @@ const renderContactFormComponent = () => {
     <ContactForm submitted={mockSubmitted} />
   );
 
-  const name = getByPlaceholderText("Name");
-  const email = getByPlaceholderText("Email");
-  const subject = getByPlaceholderText("Subject");
-  const message = getByPlaceholderText("Message");
+  const name = getByPlaceholderText("Name") as HTMLInputElement;
+  const email = getByPlaceholderText("Email") as HTMLInputElement;
+  const subject = getByPlaceholderText("Subject") as HTMLInputElement;
+  const message = getByPlaceholderText("Message") as HTMLInputElement;
   const submitButton = getByText("Send message");
 
   const fillForm = () => {
@@ -34,9 +34,13 @@ const renderContactFormComponent = () => {
   };
 };
 
+const fetch = jest.spyOn(window, "fetch");
+
 beforeAll(() => jest.spyOn(window, "fetch"));
-beforeEach(() => window.fetch.mockImplementation(mockFetch));
-afterEach(() => window.fetch.mockClear());
+beforeEach(() =>
+  fetch.mockImplementation((url) => mockFetch(url) as Promise<Response>)
+);
+afterEach(() => fetch.mockClear());
 
 describe("ContactForm Component", () => {
   it("should render correct content", async () => {
@@ -65,12 +69,8 @@ describe("ContactForm Component", () => {
   });
 
   it("should not submit an empty form", async () => {
-    const {
-      queryAllByText,
-      submitButton,
-      baseElement,
-      mockSubmitted,
-    } = renderContactFormComponent();
+    const { queryAllByText, submitButton, baseElement, mockSubmitted } =
+      renderContactFormComponent();
 
     userEvent.click(submitButton);
 
@@ -85,13 +85,8 @@ describe("ContactForm Component", () => {
   });
 
   it("should not submit with invalid email", async () => {
-    const {
-      email,
-      queryByText,
-      submitButton,
-      fillForm,
-      mockSubmitted,
-    } = renderContactFormComponent();
+    const { email, queryByText, submitButton, fillForm, mockSubmitted } =
+      renderContactFormComponent();
 
     fillForm();
     userEvent.type(email, "test@");
@@ -106,14 +101,8 @@ describe("ContactForm Component", () => {
   });
 
   it("should be able to fill form", () => {
-    const {
-      name,
-      email,
-      subject,
-      message,
-      fillForm,
-      queryAllByText,
-    } = renderContactFormComponent();
+    const { name, email, subject, message, fillForm, queryAllByText } =
+      renderContactFormComponent();
 
     fillForm();
 
@@ -127,12 +116,8 @@ describe("ContactForm Component", () => {
   });
 
   it("should submit with valid form data", async () => {
-    const {
-      submitButton,
-      fillForm,
-      mockSubmitted,
-      baseElement,
-    } = renderContactFormComponent();
+    const { submitButton, fillForm, mockSubmitted, baseElement } =
+      renderContactFormComponent();
 
     fillForm();
 
@@ -145,15 +130,12 @@ describe("ContactForm Component", () => {
   });
 
   it("should show error message on submission failed", async () => {
-    window.fetch.mockImplementation((url) => mockFetch(url, { error: true }));
+    fetch.mockImplementation(
+      (url) => mockFetch(url, { error: true }) as Promise<Response>
+    );
 
-    const {
-      submitButton,
-      fillForm,
-      mockSubmitted,
-      queryByText,
-      baseElement,
-    } = renderContactFormComponent();
+    const { submitButton, fillForm, mockSubmitted, queryByText, baseElement } =
+      renderContactFormComponent();
 
     fillForm();
 
@@ -169,17 +151,12 @@ describe("ContactForm Component", () => {
   });
 
   it("should handle unexpected exception", async () => {
-    window.fetch.mockImplementation((url) =>
-      mockFetch(url, { exception: true })
+    fetch.mockImplementation(
+      (url) => mockFetch(url, { exception: true }) as Promise<Response>
     );
 
-    const {
-      submitButton,
-      fillForm,
-      mockSubmitted,
-      queryByText,
-      baseElement,
-    } = renderContactFormComponent();
+    const { submitButton, fillForm, mockSubmitted, queryByText, baseElement } =
+      renderContactFormComponent();
 
     fillForm();
 

@@ -1,6 +1,7 @@
+import { FC } from "react";
 import Header from "./header";
 
-const PageLayout = ({ children }) => {
+const PageLayout: FC = ({ children }) => {
   return (
     <>
       <Header />

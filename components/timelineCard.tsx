@@ -1,6 +1,21 @@
 import Image from "next/image";
+import { FC } from "react";
 
-const TimelineCard = ({ title, subTitle, descriptions = [], period, type }) => {
+interface TimelineCard {
+  title: string;
+  subTitle: string;
+  descriptions?: string[];
+  period: string;
+  type: string;
+}
+
+const TimelineCard: FC<TimelineCard> = ({
+  title,
+  subTitle,
+  descriptions = [],
+  period,
+  type,
+}) => {
   return (
     <div
       className={`timeline-card ml-2 md:ml-0 flex ${
@@ -23,7 +38,7 @@ const TimelineCard = ({ title, subTitle, descriptions = [], period, type }) => {
         <h3>{title}</h3>
         <h4>{subTitle}</h4>
         <ul className="pt-4 list-disc pl-4">
-          {descriptions.map((description, i) => (
+          {descriptions.map((description: string, i: number) => (
             <li key={i}>{description}</li>
           ))}
         </ul>

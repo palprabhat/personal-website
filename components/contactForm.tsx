@@ -1,8 +1,27 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, {
+  FC,
+  MutableRefObject,
+  useCallback,
+  useRef,
+  useState,
+} from "react";
 import { Form, InputField, TextArea } from "./reactHookFormUI";
-import ReCaptcha from "react-google-recaptcha";
+import ReCaptcha, { ReCAPTCHA } from "react-google-recaptcha";
 import ErrorText from "./errorText";
 import * as Yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+interface IContactForm {
+  submitted: () => void;
+}
+
+interface IMessage {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
 
 const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
@@ -15,24 +34,24 @@ const validationSchema = Yup.object({
   message: Yup.string().required("Please add a message"),
 });
 
-const ContactForm = ({ submitted }) => {
+const ContactForm: FC<IContactForm> = ({ submitted }) => {
   const [errorMessage, setErrorMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const reCaptchaRef = useRef();
+  const reCaptchaRef = useRef() as MutableRefObject<ReCaptcha>;
 
-  useEffect(() => {
-    return () => {
-      setIsSubmitting(false);
-      setErrorMessage("");
-    };
-  }, []);
+  const { handleSubmit, register, errors, setValue, watch, trigger } =
+    useForm<IMessage>({
+      resolver: yupResolver(validationSchema),
+      mode: "onTouched",
+      defaultValues: {},
+    });
 
-  const onSubmit = useCallback(async (data) => {
+  const onSubmit = async (data: IMessage) => {
     setIsSubmitting(true);
 
-    let reToken = "";
+    let reToken = null;
     /* istanbul ignore next */
-    if (process.env.NODE_ENV.toLowerCase() !== "test") {
+    if (process.env.NODE_ENV?.toLowerCase() !== "test") {
       reToken = await reCaptchaRef.current.executeAsync();
       reCaptchaRef.current.reset();
     }
@@ -55,14 +74,14 @@ const ContactForm = ({ submitted }) => {
     } finally {
       setIsSubmitting(false);
     }
-  });
+  };
 
   return (
-    <Form onSubmit={onSubmit} validationSchema={validationSchema}>
-      <InputField name="name" placeholder="Name" ariaLabel="Name" />
-      <InputField name="email" placeholder="Email" ariaLabel="Email" />
-      <InputField name="subject" placeholder="Subject" ariaLabel="Subject" />
-      <TextArea name="message" placeholder="Message" ariaLabel="Message" />
+    <Form onSubmit={handleSubmit(onSubmit)} register={register} errors={errors}>
+      <InputField name="name" placeholder="Name" aria-label="Name" />
+      <InputField name="email" placeholder="Email" aria-label="Email" />
+      <InputField name="subject" placeholder="Subject" aria-label="Subject" />
+      <TextArea name="message" placeholder="Message" aria-label="Message" />
       <ReCaptcha
         sitekey={RECAPTCHA_SITE_KEY}
         size="invisible"
@@ -71,7 +90,6 @@ const ContactForm = ({ submitted }) => {
       <button type="submit" className="btn-primary" disabled={isSubmitting}>
         {isSubmitting ? "Sending..." : "Send message"}
       </button>
-
       {errorMessage && <ErrorText>{errorMessage}</ErrorText>}
     </Form>
   );

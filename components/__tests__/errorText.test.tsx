@@ -8,7 +8,7 @@ describe("ErrorText Component", () => {
       <ErrorText>{errorMessage}</ErrorText>
     );
 
-    const link = queryByText(errorMessage);
+    const link = queryByText(errorMessage) as HTMLDivElement;
 
     expect(link).toBeInTheDocument();
     expect(link.innerHTML).toBe(errorMessage);

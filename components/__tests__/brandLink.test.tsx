@@ -8,7 +8,12 @@ const testLabel = "Test Label";
 describe("BrandLink Component", () => {
   it("renders correct content", () => {
     const { baseElement, queryByTestId } = render(
-      <BrandLink testId={brandLinkTest} link={testLink} ariaLabel={testLabel} />
+      <BrandLink
+        testId={brandLinkTest}
+        link={testLink}
+        ariaLabel={testLabel}
+        iconClass=""
+      />
     );
 
     const link = queryByTestId(brandLinkTest);
