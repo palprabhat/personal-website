@@ -7,7 +7,12 @@ describe("BrandLink Component", () => {
     const testLink = "https://prabhatpal.com/";
     const testLabel = "Test Label";
     render(
-      <BrandLink testId={brandLinkTest} link={testLink} ariaLabel={testLabel} />
+      <BrandLink
+        testId={brandLinkTest}
+        link={testLink}
+        ariaLabel={testLabel}
+        iconClass=""
+      />
     );
 
     const link = screen.queryByTestId(brandLinkTest);

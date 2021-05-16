@@ -1,5 +1,16 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { FC, useState } from "react";
+
+interface NewProjectCard {
+  src: string;
+  name: string;
+  description: string;
+  tech: string;
+  liveSiteLink?: string;
+  liveSiteLinkAriaLabel?: string;
+  githubLink: string;
+  githubAriaLabel: string;
+}
 
 const noAnimation = {
   hidden: {
@@ -77,7 +88,7 @@ const slideUp = {
   },
 };
 
-const NewProjectCard = ({
+const NewProjectCard: FC<NewProjectCard> = ({
   src,
   name,
   description,

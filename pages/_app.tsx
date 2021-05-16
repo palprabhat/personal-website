@@ -4,13 +4,14 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import * as gtag from "@utils/gtag";
+import { AppProps } from "next/dist/next-server/lib/router/router";
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
 
   useEffect(() => {
     if (process.env.NODE_ENV === "production") {
-      const handleRouteChange = (url) => {
+      const handleRouteChange = (url: any) => {
         gtag.pageview(url);
       };
       router.events.on("routeChangeComplete", handleRouteChange);
