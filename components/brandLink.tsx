@@ -1,6 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
 
-const BrandLink = ({ link, iconClass, ariaLabel, testId }) => {
+interface BrandLink {
+  link: string;
+  iconClass: string;
+  ariaLabel: string;
+  testId: string;
+}
+
+const BrandLink: FC<BrandLink> = ({ link, iconClass, ariaLabel, testId }) => {
   return (
     <a
       href={link}

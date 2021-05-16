@@ -1,13 +1,16 @@
 import { useRouter } from "next/router";
 import { getExternalUrl } from "../../utils/helper";
-import { useEffect } from "react";
+import { FC, useEffect } from "react";
 import Head from "next/head";
+import { GetServerSideProps } from "next";
 
-const Project = ({ projectName }) => {
+interface Project {
+  projectName: string;
+}
+
+const Project: FC<Project> = ({ projectName }) => {
   const router = useRouter();
   const externalUrl = getExternalUrl(projectName);
-
-  console.log(projectName, router.asPath, externalUrl);
 
   useEffect(() => {
     if (externalUrl === "/404") {
@@ -30,7 +33,7 @@ const Project = ({ projectName }) => {
   );
 };
 
-export const getServerSideProps = async (ctx) => {
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { project } = ctx.query;
   return { props: { projectName: project } };
 };

@@ -156,7 +156,6 @@ exports[`ContactForm Component should not submit an empty form 1`] = `
       >
         Send message
       </button>
-      
     </form>
   </div>
 </body>
@@ -228,7 +227,6 @@ exports[`ContactForm Component should render correct content 1`] = `
       >
         Send message
       </button>
-      
     </form>
   </div>
   <script
@@ -385,7 +383,6 @@ exports[`ContactForm Component should submit with valid form data 1`] = `
       >
         Send message
       </button>
-      
     </form>
   </div>
 </body>
