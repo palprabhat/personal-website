@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorText Component renders correct content 1`] = `
+<div>
+  <div
+    class="text-red-600 text-sm text-left pl-5 h-6"
+  >
+    Test Error message
+  </div>
+</div>
+`;

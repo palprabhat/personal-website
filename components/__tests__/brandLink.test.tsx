@@ -7,7 +7,7 @@ const testLabel = "Test Label";
 
 describe("BrandLink Component", () => {
   it("renders correct content", () => {
-    const { baseElement, queryByTestId } = render(
+    const { container, queryByTestId } = render(
       <BrandLink
         testId={brandLinkTest}
         link={testLink}
@@ -22,6 +22,6 @@ describe("BrandLink Component", () => {
     expect(link).toHaveAttribute("href", testLink);
     expect(link).toHaveAttribute("aria-label", testLabel);
 
-    expect(baseElement).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

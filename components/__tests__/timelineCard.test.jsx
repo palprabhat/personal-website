@@ -3,8 +3,8 @@ import TimelineCard from "../timelineCard";
 
 describe("TimelineCard Component", () => {
   it("matches snapshot", () => {
-    const { baseElement } = render(<TimelineCard />);
+    const { container } = render(<TimelineCard />);
 
-    expect(baseElement).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

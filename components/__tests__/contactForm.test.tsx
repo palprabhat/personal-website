@@ -50,7 +50,7 @@ describe("ContactForm Component", () => {
       subject,
       message,
       submitButton,
-      baseElement,
+      container,
       queryAllByText,
     } = renderContactFormComponent();
 
@@ -65,11 +65,11 @@ describe("ContactForm Component", () => {
       expect(errors.length).toBe(0);
     });
 
-    expect(baseElement).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it("should not submit an empty form", async () => {
-    const { queryAllByText, submitButton, baseElement, mockSubmitted } =
+    const { queryAllByText, submitButton, container, mockSubmitted } =
       renderContactFormComponent();
 
     userEvent.click(submitButton);
@@ -81,7 +81,7 @@ describe("ContactForm Component", () => {
       expect(errors.length).toBe(4);
     });
 
-    expect(baseElement).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it("should not submit with invalid email", async () => {
@@ -116,7 +116,7 @@ describe("ContactForm Component", () => {
   });
 
   it("should submit with valid form data", async () => {
-    const { submitButton, fillForm, mockSubmitted, baseElement } =
+    const { submitButton, fillForm, mockSubmitted, container } =
       renderContactFormComponent();
 
     fillForm();
@@ -126,7 +126,7 @@ describe("ContactForm Component", () => {
       expect(mockSubmitted).toHaveBeenCalledTimes(1);
     });
 
-    expect(baseElement).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it("should show error message on submission failed", async () => {
@@ -134,7 +134,7 @@ describe("ContactForm Component", () => {
       (url) => mockFetch(url, { error: true }) as Promise<Response>
     );
 
-    const { submitButton, fillForm, mockSubmitted, queryByText, baseElement } =
+    const { submitButton, fillForm, mockSubmitted, queryByText, container } =
       renderContactFormComponent();
 
     fillForm();
@@ -147,7 +147,7 @@ describe("ContactForm Component", () => {
       expect(mockSubmitted).toHaveBeenCalledTimes(0);
     });
 
-    expect(baseElement).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it("should handle unexpected exception", async () => {
@@ -155,7 +155,7 @@ describe("ContactForm Component", () => {
       (url) => mockFetch(url, { exception: true }) as Promise<Response>
     );
 
-    const { submitButton, fillForm, mockSubmitted, queryByText, baseElement } =
+    const { submitButton, fillForm, mockSubmitted, queryByText, container } =
       renderContactFormComponent();
 
     fillForm();
@@ -168,6 +168,6 @@ describe("ContactForm Component", () => {
       expect(mockSubmitted).toHaveBeenCalledTimes(0);
     });
 
-    expect(baseElement).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

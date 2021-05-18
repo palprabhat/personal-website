@@ -18,8 +18,8 @@ beforeEach(() => {
 
 describe("Hero Component", () => {
   it("matches snapshot", () => {
-    const { baseElement } = render(<Hero />);
-    expect(baseElement).toMatchSnapshot();
+    const { container } = render(<Hero />);
+    expect(container).toMatchSnapshot();
   });
 
   it("renders heading", () => {

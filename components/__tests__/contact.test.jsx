@@ -36,18 +36,14 @@ afterEach(() => window.fetch.mockClear());
 
 describe("Contact Component", () => {
   it("matched snapshot", async () => {
-    const { baseElement } = renderContactFormComponent();
+    const { container } = renderContactFormComponent();
 
-    expect(baseElement).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it("should show thank you message on successful for submission", async () => {
-    const {
-      submitButton,
-      fillForm,
-      queryByText,
-      baseElement,
-    } = renderContactFormComponent();
+    const { submitButton, fillForm, queryByText, container } =
+      renderContactFormComponent();
 
     expect(submitButton).toBeInTheDocument();
 
@@ -61,16 +57,12 @@ describe("Contact Component", () => {
       expect(thankyouMessage).toBeInTheDocument();
     });
 
-    expect(baseElement).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it("should show contact from on click on 'Send another message'", async () => {
-    const {
-      submitButton,
-      fillForm,
-      queryByText,
-      baseElement,
-    } = renderContactFormComponent();
+    const { submitButton, fillForm, queryByText, container } =
+      renderContactFormComponent();
 
     expect(submitButton).toBeInTheDocument();
 
@@ -88,7 +80,7 @@ describe("Contact Component", () => {
         expect(submitButton).toBeInTheDocument();
       });
 
-      expect(baseElement).toMatchSnapshot();
+      expect(container).toMatchSnapshot();
     });
   });
 });

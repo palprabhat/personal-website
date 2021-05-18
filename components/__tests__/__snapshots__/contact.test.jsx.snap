@@ -1,324 +1,307 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Contact Component matched snapshot 1`] = `
-<body>
-  <div>
-    <section
-      class="text-center section-p bg-primary-100"
+<div>
+  <section
+    class="text-center section-p bg-primary-100"
+  >
+    <h2>
+      Have a question or want to work together?
+    </h2>
+    <div
+      class="max-w-6xl mx-auto mt-16 flex justify-between items-center"
     >
-      <h2>
-        Have a question or want to work together?
-      </h2>
       <div
-        class="max-w-6xl mx-auto mt-16 flex justify-between items-center"
+        class="w-1/2 hidden md:block"
       >
         <div
-          class="w-1/2 hidden md:block"
+          style="max-width: 100%; width: 936px;"
         >
           <div
-            style="max-width: 100%; width: 936px;"
+            style="position: relative; padding-bottom: 52.45726495726496%;"
           >
-            <div
-              style="position: relative; padding-bottom: 52.45726495726496%;"
-            >
-              
-              <img
-                alt="Contact"
-                class="__lazy"
-                data-src="/_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75"
-                data-srcset="/_next/image?url=%2Fimages%2Fcontact.svg&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fcontact.svg&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fcontact.svg&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75 1024w"
-                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          class="w-full md:w-1/2 md:px-8 flex flex-col justify-end"
-          style="height: 450px;"
-        >
-          <form
-            class="w-full undefined"
-          >
-            <div
-              class="my-2"
-            >
-              <input
-                aria-label="Name"
-                class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-                name="name"
-                placeholder="Name"
-              />
-              <div
-                class="text-red-600 text-sm text-left pl-5 h-6"
-              />
-            </div>
-            <div
-              class="my-2"
-            >
-              <input
-                aria-label="Email"
-                class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-                name="email"
-                placeholder="Email"
-              />
-              <div
-                class="text-red-600 text-sm text-left pl-5 h-6"
-              />
-            </div>
-            <div
-              class="my-2"
-            >
-              <input
-                aria-label="Subject"
-                class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-                name="subject"
-                placeholder="Subject"
-              />
-              <div
-                class="text-red-600 text-sm text-left pl-5 h-6"
-              />
-            </div>
-            <div
-              class="my-2"
-            >
-              <textarea
-                aria-label="Message"
-                class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
-                name="message"
-                placeholder="Message"
-                rows="3"
-              />
-              <div
-                class="text-red-600 text-sm text-left pl-5 h-6"
-              />
-            </div>
-            <div />
-            <button
-              class="btn-primary"
-              type="submit"
-            >
-              Send message
-            </button>
             
-          </form>
-          <div
-            class="flex flex-wrap justify-around mt-8"
-          >
-            <a
-              class="flex justify-center items-center px-2 group"
-              data-testid="my-email"
-              href="mailto:prabhatpal.14@gmail.com"
-            >
-              <span
-                class="brand-icon-email mr-1 group-hover:text-primary-600 group-focus:text-primary-600"
-              />
-              prabhatpal.14@gmail.com
-            </a>
+            <img
+              alt="Contact"
+              class="__lazy"
+              data-src="/_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75"
+              data-srcset="/_next/image?url=%2Fimages%2Fcontact.svg&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fcontact.svg&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fcontact.svg&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75 1024w"
+              style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+            />
           </div>
         </div>
       </div>
-    </section>
-  </div>
-  <script
-    src="https://www.google.com/recaptcha/api.js?onload=onloadcallback&render=explicit"
-  />
-</body>
+      <div
+        class="w-full md:w-1/2 md:px-8 flex flex-col justify-end"
+        style="height: 450px;"
+      >
+        <form
+          class="w-full undefined"
+        >
+          <div
+            class="my-2"
+          >
+            <input
+              aria-label="Name"
+              class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+              name="name"
+              placeholder="Name"
+            />
+            <div
+              class="text-red-600 text-sm text-left pl-5 h-6"
+            />
+          </div>
+          <div
+            class="my-2"
+          >
+            <input
+              aria-label="Email"
+              class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+              name="email"
+              placeholder="Email"
+            />
+            <div
+              class="text-red-600 text-sm text-left pl-5 h-6"
+            />
+          </div>
+          <div
+            class="my-2"
+          >
+            <input
+              aria-label="Subject"
+              class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+              name="subject"
+              placeholder="Subject"
+            />
+            <div
+              class="text-red-600 text-sm text-left pl-5 h-6"
+            />
+          </div>
+          <div
+            class="my-2"
+          >
+            <textarea
+              aria-label="Message"
+              class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+              name="message"
+              placeholder="Message"
+              rows="3"
+            />
+            <div
+              class="text-red-600 text-sm text-left pl-5 h-6"
+            />
+          </div>
+          <div />
+          <button
+            class="btn-primary"
+            type="submit"
+          >
+            Send message
+          </button>
+        </form>
+        <div
+          class="flex flex-wrap justify-around mt-8"
+        >
+          <a
+            class="flex justify-center items-center px-2 group"
+            data-testid="my-email"
+            href="mailto:prabhatpal.14@gmail.com"
+          >
+            <span
+              class="brand-icon-email mr-1 group-hover:text-primary-600 group-focus:text-primary-600"
+            />
+            prabhatpal.14@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 `;
 
 exports[`Contact Component should show contact from on click on 'Send another message' 1`] = `
-<body>
-  <script
-    src="https://www.google.com/recaptcha/api.js?onload=onloadcallback&render=explicit"
-  />
-  <div>
-    <section
-      class="text-center section-p bg-primary-100"
+<div>
+  <section
+    class="text-center section-p bg-primary-100"
+  >
+    <h2>
+      Have a question or want to work together?
+    </h2>
+    <div
+      class="max-w-6xl mx-auto mt-16 flex justify-between items-center"
     >
-      <h2>
-        Have a question or want to work together?
-      </h2>
       <div
-        class="max-w-6xl mx-auto mt-16 flex justify-between items-center"
+        class="w-1/2 hidden md:block"
       >
         <div
-          class="w-1/2 hidden md:block"
+          style="max-width: 100%; width: 936px;"
         >
           <div
-            style="max-width: 100%; width: 936px;"
+            style="position: relative; padding-bottom: 52.45726495726496%;"
           >
-            <div
-              style="position: relative; padding-bottom: 52.45726495726496%;"
-            >
-              
-              <img
-                alt="Contact"
-                class="__lazy"
-                data-src="/_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75"
-                data-srcset="/_next/image?url=%2Fimages%2Fcontact.svg&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fcontact.svg&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fcontact.svg&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75 1024w"
-                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          class="w-full md:w-1/2 md:px-8 flex flex-col justify-end"
-          style="height: 450px;"
-        >
-          <form
-            class="w-full undefined"
-          >
-            <div
-              class="my-2"
-            >
-              <input
-                aria-label="Name"
-                class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-                name="name"
-                placeholder="Name"
-              />
-              <div
-                class="text-red-600 text-sm text-left pl-5 h-6"
-              />
-            </div>
-            <div
-              class="my-2"
-            >
-              <input
-                aria-label="Email"
-                class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-                name="email"
-                placeholder="Email"
-              />
-              <div
-                class="text-red-600 text-sm text-left pl-5 h-6"
-              />
-            </div>
-            <div
-              class="my-2"
-            >
-              <input
-                aria-label="Subject"
-                class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-                name="subject"
-                placeholder="Subject"
-              />
-              <div
-                class="text-red-600 text-sm text-left pl-5 h-6"
-              />
-            </div>
-            <div
-              class="my-2"
-            >
-              <textarea
-                aria-label="Message"
-                class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
-                name="message"
-                placeholder="Message"
-                rows="3"
-              />
-              <div
-                class="text-red-600 text-sm text-left pl-5 h-6"
-              />
-            </div>
-            <div />
-            <button
-              class="btn-primary"
-              type="submit"
-            >
-              Send message
-            </button>
             
-          </form>
-          <div
-            class="flex flex-wrap justify-around mt-8"
-          >
-            <a
-              class="flex justify-center items-center px-2 group"
-              data-testid="my-email"
-              href="mailto:prabhatpal.14@gmail.com"
-            >
-              <span
-                class="brand-icon-email mr-1 group-hover:text-primary-600 group-focus:text-primary-600"
-              />
-              prabhatpal.14@gmail.com
-            </a>
+            <img
+              alt="Contact"
+              class="__lazy"
+              data-src="/_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75"
+              data-srcset="/_next/image?url=%2Fimages%2Fcontact.svg&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fcontact.svg&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fcontact.svg&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75 1024w"
+              style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+            />
           </div>
         </div>
       </div>
-    </section>
-  </div>
-</body>
+      <div
+        class="w-full md:w-1/2 md:px-8 flex flex-col justify-end"
+        style="height: 450px;"
+      >
+        <form
+          class="w-full undefined"
+        >
+          <div
+            class="my-2"
+          >
+            <input
+              aria-label="Name"
+              class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+              name="name"
+              placeholder="Name"
+            />
+            <div
+              class="text-red-600 text-sm text-left pl-5 h-6"
+            />
+          </div>
+          <div
+            class="my-2"
+          >
+            <input
+              aria-label="Email"
+              class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+              name="email"
+              placeholder="Email"
+            />
+            <div
+              class="text-red-600 text-sm text-left pl-5 h-6"
+            />
+          </div>
+          <div
+            class="my-2"
+          >
+            <input
+              aria-label="Subject"
+              class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+              name="subject"
+              placeholder="Subject"
+            />
+            <div
+              class="text-red-600 text-sm text-left pl-5 h-6"
+            />
+          </div>
+          <div
+            class="my-2"
+          >
+            <textarea
+              aria-label="Message"
+              class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+              name="message"
+              placeholder="Message"
+              rows="3"
+            />
+            <div
+              class="text-red-600 text-sm text-left pl-5 h-6"
+            />
+          </div>
+          <div />
+          <button
+            class="btn-primary"
+            type="submit"
+          >
+            Send message
+          </button>
+        </form>
+        <div
+          class="flex flex-wrap justify-around mt-8"
+        >
+          <a
+            class="flex justify-center items-center px-2 group"
+            data-testid="my-email"
+            href="mailto:prabhatpal.14@gmail.com"
+          >
+            <span
+              class="brand-icon-email mr-1 group-hover:text-primary-600 group-focus:text-primary-600"
+            />
+            prabhatpal.14@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 `;
 
 exports[`Contact Component should show thank you message on successful for submission 1`] = `
-<body>
-  <script
-    src="https://www.google.com/recaptcha/api.js?onload=onloadcallback&render=explicit"
-  />
-  <div>
-    <section
-      class="text-center section-p bg-primary-100"
+<div>
+  <section
+    class="text-center section-p bg-primary-100"
+  >
+    <h2>
+      Have a question or want to work together?
+    </h2>
+    <div
+      class="max-w-6xl mx-auto mt-16 flex justify-between items-center"
     >
-      <h2>
-        Have a question or want to work together?
-      </h2>
       <div
-        class="max-w-6xl mx-auto mt-16 flex justify-between items-center"
+        class="w-1/2 hidden md:block"
       >
         <div
-          class="w-1/2 hidden md:block"
+          style="max-width: 100%; width: 936px;"
         >
           <div
-            style="max-width: 100%; width: 936px;"
+            style="position: relative; padding-bottom: 52.45726495726496%;"
           >
-            <div
-              style="position: relative; padding-bottom: 52.45726495726496%;"
-            >
-              
-              <img
-                alt="Contact"
-                class="__lazy"
-                data-src="/_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75"
-                data-srcset="/_next/image?url=%2Fimages%2Fcontact.svg&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fcontact.svg&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fcontact.svg&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75 1024w"
-                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          class="w-full md:w-1/2 md:px-8 flex flex-col justify-end"
-          style="height: 450px;"
-        >
-          <div>
-            <h3
-              class="mb-24"
-            >
-              Thank you for reaching out to me, I will get back to you soon.
-            </h3>
-            <button
-              class="btn-secondary"
-              type="button"
-            >
-              Send another message
-            </button>
-          </div>
-          <div
-            class="flex flex-wrap justify-around mt-8"
-          >
-            <a
-              class="flex justify-center items-center px-2 group"
-              data-testid="my-email"
-              href="mailto:prabhatpal.14@gmail.com"
-            >
-              <span
-                class="brand-icon-email mr-1 group-hover:text-primary-600 group-focus:text-primary-600"
-              />
-              prabhatpal.14@gmail.com
-            </a>
+            
+            <img
+              alt="Contact"
+              class="__lazy"
+              data-src="/_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75"
+              data-srcset="/_next/image?url=%2Fimages%2Fcontact.svg&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fcontact.svg&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fcontact.svg&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fcontact.svg&w=1024&q=75 1024w"
+              style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+            />
           </div>
         </div>
       </div>
-    </section>
-  </div>
-</body>
+      <div
+        class="w-full md:w-1/2 md:px-8 flex flex-col justify-end"
+        style="height: 450px;"
+      >
+        <div>
+          <h3
+            class="mb-24"
+          >
+            Thank you for reaching out to me, I will get back to you soon.
+          </h3>
+          <button
+            class="btn-secondary"
+            type="button"
+          >
+            Send another message
+          </button>
+        </div>
+        <div
+          class="flex flex-wrap justify-around mt-8"
+        >
+          <a
+            class="flex justify-center items-center px-2 group"
+            data-testid="my-email"
+            href="mailto:prabhatpal.14@gmail.com"
+          >
+            <span
+              class="brand-icon-email mr-1 group-hover:text-primary-600 group-focus:text-primary-600"
+            />
+            prabhatpal.14@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 `;
