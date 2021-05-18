@@ -1,389 +1,364 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactForm Component should handle unexpected exception 1`] = `
-<body>
-  <script
-    src="https://www.google.com/recaptcha/api.js?onload=onloadcallback&render=explicit"
-  />
-  <div>
-    <form
-      class="w-full undefined"
+<div>
+  <form
+    class="w-full undefined"
+  >
+    <div
+      class="my-2"
     >
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Name"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="name"
-          placeholder="Name"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Email"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="email"
-          placeholder="Email"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Subject"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="subject"
-          placeholder="Subject"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div
-        class="my-2"
-      >
-        <textarea
-          aria-label="Message"
-          class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
-          name="message"
-          placeholder="Message"
-          rows="3"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div />
-      <button
-        class="btn-primary"
-        type="submit"
-      >
-        Send message
-      </button>
+      <input
+        aria-label="Name"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="name"
+        placeholder="Name"
+      />
       <div
         class="text-red-600 text-sm text-left pl-5 h-6"
-      >
-        Something went wrong! Please try again.
-      </div>
-    </form>
-  </div>
-</body>
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Email"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="email"
+        placeholder="Email"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Subject"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="subject"
+        placeholder="Subject"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <textarea
+        aria-label="Message"
+        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+        name="message"
+        placeholder="Message"
+        rows="3"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div />
+    <button
+      class="btn-primary"
+      type="submit"
+    >
+      Send message
+    </button>
+    <div
+      class="text-red-600 text-sm text-left pl-5 h-6"
+    >
+      Something went wrong! Please try again.
+    </div>
+  </form>
+</div>
 `;
 
 exports[`ContactForm Component should not submit an empty form 1`] = `
-<body>
-  <script
-    src="https://www.google.com/recaptcha/api.js?onload=onloadcallback&render=explicit"
-  />
-  <div>
-    <form
-      class="w-full undefined"
+<div>
+  <form
+    class="w-full undefined"
+  >
+    <div
+      class="my-2"
     >
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Name"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="name"
-          placeholder="Name"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        >
-          Please provide your name
-        </div>
-      </div>
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Email"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="email"
-          placeholder="Email"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        >
-          Please provide your email
-        </div>
-      </div>
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Subject"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="subject"
-          placeholder="Subject"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        >
-          Please add a subject
-        </div>
-      </div>
-      <div
-        class="my-2"
-      >
-        <textarea
-          aria-label="Message"
-          class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
-          name="message"
-          placeholder="Message"
-          rows="3"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        >
-          Please add a message
-        </div>
-      </div>
-      <div />
-      <button
-        class="btn-primary"
-        type="submit"
-      >
-        Send message
-      </button>
-    </form>
-  </div>
-</body>
-`;
-
-exports[`ContactForm Component should render correct content 1`] = `
-<body>
-  <div>
-    <form
-      class="w-full undefined"
-    >
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Name"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="name"
-          placeholder="Name"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Email"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="email"
-          placeholder="Email"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Subject"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="subject"
-          placeholder="Subject"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div
-        class="my-2"
-      >
-        <textarea
-          aria-label="Message"
-          class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
-          name="message"
-          placeholder="Message"
-          rows="3"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div />
-      <button
-        class="btn-primary"
-        type="submit"
-      >
-        Send message
-      </button>
-    </form>
-  </div>
-  <script
-    src="https://www.google.com/recaptcha/api.js?onload=onloadcallback&render=explicit"
-  />
-</body>
-`;
-
-exports[`ContactForm Component should show error message on submission failed 1`] = `
-<body>
-  <script
-    src="https://www.google.com/recaptcha/api.js?onload=onloadcallback&render=explicit"
-  />
-  <div>
-    <form
-      class="w-full undefined"
-    >
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Name"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="name"
-          placeholder="Name"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Email"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="email"
-          placeholder="Email"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div
-        class="my-2"
-      >
-        <input
-          aria-label="Subject"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="subject"
-          placeholder="Subject"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div
-        class="my-2"
-      >
-        <textarea
-          aria-label="Message"
-          class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
-          name="message"
-          placeholder="Message"
-          rows="3"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div />
-      <button
-        class="btn-primary"
-        type="submit"
-      >
-        Send message
-      </button>
+      <input
+        aria-label="Name"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="name"
+        placeholder="Name"
+      />
       <div
         class="text-red-600 text-sm text-left pl-5 h-6"
       >
-        Something went wrong
+        Please provide your name
       </div>
-    </form>
-  </div>
-</body>
+    </div>
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Email"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="email"
+        placeholder="Email"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      >
+        Please provide your email
+      </div>
+    </div>
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Subject"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="subject"
+        placeholder="Subject"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      >
+        Please add a subject
+      </div>
+    </div>
+    <div
+      class="my-2"
+    >
+      <textarea
+        aria-label="Message"
+        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+        name="message"
+        placeholder="Message"
+        rows="3"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      >
+        Please add a message
+      </div>
+    </div>
+    <div />
+    <button
+      class="btn-primary"
+      type="submit"
+    >
+      Send message
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ContactForm Component should render correct content 1`] = `
+<div>
+  <form
+    class="w-full undefined"
+  >
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Name"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="name"
+        placeholder="Name"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Email"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="email"
+        placeholder="Email"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Subject"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="subject"
+        placeholder="Subject"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <textarea
+        aria-label="Message"
+        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+        name="message"
+        placeholder="Message"
+        rows="3"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div />
+    <button
+      class="btn-primary"
+      type="submit"
+    >
+      Send message
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ContactForm Component should show error message on submission failed 1`] = `
+<div>
+  <form
+    class="w-full undefined"
+  >
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Name"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="name"
+        placeholder="Name"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Email"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="email"
+        placeholder="Email"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Subject"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="subject"
+        placeholder="Subject"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <textarea
+        aria-label="Message"
+        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+        name="message"
+        placeholder="Message"
+        rows="3"
+      />
+      <div
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div />
+    <button
+      class="btn-primary"
+      type="submit"
+    >
+      Send message
+    </button>
+    <div
+      class="text-red-600 text-sm text-left pl-5 h-6"
+    >
+      Something went wrong
+    </div>
+  </form>
+</div>
 `;
 
 exports[`ContactForm Component should submit with valid form data 1`] = `
-<body>
-  <script
-    src="https://www.google.com/recaptcha/api.js?onload=onloadcallback&render=explicit"
-  />
-  <div>
-    <form
-      class="w-full undefined"
+<div>
+  <form
+    class="w-full undefined"
+  >
+    <div
+      class="my-2"
     >
+      <input
+        aria-label="Name"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="name"
+        placeholder="Name"
+      />
       <div
-        class="my-2"
-      >
-        <input
-          aria-label="Name"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="name"
-          placeholder="Name"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Email"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="email"
+        placeholder="Email"
+      />
       <div
-        class="my-2"
-      >
-        <input
-          aria-label="Email"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="email"
-          placeholder="Email"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <input
+        aria-label="Subject"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        name="subject"
+        placeholder="Subject"
+      />
       <div
-        class="my-2"
-      >
-        <input
-          aria-label="Subject"
-          class="border-none rounded-3xl w-full px-5 py-2 outline-none"
-          name="subject"
-          placeholder="Subject"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div
+      class="my-2"
+    >
+      <textarea
+        aria-label="Message"
+        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+        name="message"
+        placeholder="Message"
+        rows="3"
+      />
       <div
-        class="my-2"
-      >
-        <textarea
-          aria-label="Message"
-          class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
-          name="message"
-          placeholder="Message"
-          rows="3"
-        />
-        <div
-          class="text-red-600 text-sm text-left pl-5 h-6"
-        />
-      </div>
-      <div />
-      <button
-        class="btn-primary"
-        type="submit"
-      >
-        Send message
-      </button>
-    </form>
-  </div>
-</body>
+        class="text-red-600 text-sm text-left pl-5 h-6"
+      />
+    </div>
+    <div />
+    <button
+      class="btn-primary"
+      type="submit"
+    >
+      Send message
+    </button>
+  </form>
+</div>
 `;

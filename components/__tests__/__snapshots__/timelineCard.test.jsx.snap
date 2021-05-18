@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimelineCard Component matches snapshot 1`] = `
+<div>
+  <div
+    class="timeline-card ml-2 md:ml-0 flex md:flex-row-reverse"
+  >
+    <div
+      class="relative work w-4/5 md:w-2/5 mx-auto md:mr-0 bg-primary-200 rounded-xl p-4 text-left mb-4 "
+    >
+      <div
+        class="text-right text-gray-700 text-sm"
+      />
+      <h3 />
+      <h4 />
+      <ul
+        class="pt-4 list-disc pl-4"
+      />
+    </div>
+  </div>
+</div>
+`;

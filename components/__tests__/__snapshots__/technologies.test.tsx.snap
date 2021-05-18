@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Technologies Component matches snapshot 1`] = `
+<div>
+  <section
+    class="text-center section-p"
+  >
+    <h2>
+      <span
+        class="text-primary-500"
+      >
+        Libraries / Frameworks
+      </span>
+       I work with
+    </h2>
+    <div
+      class="max-w-6xl mx-auto mt-10 grid grid-cols-2 gap-x-3 gap-y-10 md:gap-x-6 md:grid-cols-3 lg:grid-cols-4"
+    >
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="ReactJs"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_ReactJs.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="NextJs"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_NextJs.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="Typescript"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_typescript.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="nodeJs"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_nodeJs.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="Auth0"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_auth0.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="Firebase"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_firebase.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="sass"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_sass.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="tailwindCss"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_tailwindCss.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="Bootstrap"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_Bootstrap.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="Apollo"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_apollo.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="Graphql"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_graphql.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="PostgreSQL"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_postgre-sql.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="Prisma"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_prisma.png"
+        />
+      </div>
+      <div
+        class="inline-flex justify-center"
+        style="max-height: 85px;"
+      >
+        <img
+          alt="Reason"
+          class="max-h-full max-w-full h-auto w-auto"
+          src="/images/tech_Reason.png"
+        />
+      </div>
+    </div>
+  </section>
+</div>
+`;

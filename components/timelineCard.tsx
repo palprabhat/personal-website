@@ -37,13 +37,11 @@ const TimelineCard: FC<TimelineCard> = ({
         <div className="text-right text-gray-700 text-sm">{period}</div>
         <h3>{title}</h3>
         <h4>{subTitle}</h4>
-        {descriptions && (
-          <ul className="pt-4 list-disc pl-4">
-            {descriptions.map((description: string, i: number) => (
-              <li key={i}>{description}</li>
-            ))}
-          </ul>
-        )}
+        <ul className="pt-4 list-disc pl-4">
+          {descriptions.map((description: string, i: number) => (
+            <li key={i}>{description}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
