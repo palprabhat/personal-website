@@ -4,10 +4,10 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: [
-    "./components/**/*.jsx",
-    "./components/**/*.js",
-    "./pages/**/*.jsx",
-    "./pages/**/*.js",
+    "./components/**/*.tsx",
+    "./components/**/*.ts",
+    "./pages/**/*.tsx",
+    "./pages/**/*.ts",
   ],
   theme: {
     fontFamily: {
