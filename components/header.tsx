@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import Image from "next/image";
-import MyEmail from "./myEmail";
 import { headerTestId, logoId } from "../constants/testIds.const";
+import MyEmail from "./myEmail";
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <div
       className="mx-12 mt-3 hidden md:flex justify-between"

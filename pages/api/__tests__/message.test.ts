@@ -1,5 +1,5 @@
-import { NextApiRequest, NextApiResponse } from "next";
-import { createMocks, createResponse } from "node-mocks-http";
+import { NextApiRequest } from "next";
+import { createResponse } from "node-mocks-http";
 import messageHandler from "../message";
 import {
   mockFetch,
@@ -72,6 +72,7 @@ describe("/message", () => {
     fetch.mockImplementation(
       (url) => mockFetch(url, { throwError: true }) as Promise<Response>
     );
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
     jest.spyOn(console, "error").mockImplementation(() => {});
 
     await messageHandler(postReq, res);

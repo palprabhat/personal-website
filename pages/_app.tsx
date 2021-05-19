@@ -2,16 +2,16 @@ import "@styles/brand-icon.scss";
 import "@styles/tailwind.scss";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { FC, useEffect } from "react";
 import * as gtag from "@utils/gtag";
 import { AppProps } from "next/dist/next-server/lib/router/router";
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter();
 
   useEffect(() => {
     if (process.env.NODE_ENV === "production") {
-      const handleRouteChange = (url: any) => {
+      const handleRouteChange = (url: unknown) => {
         gtag.pageview(url);
       };
       router.events.on("routeChangeComplete", handleRouteChange);

@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
-import { getExternalUrl } from "../../utils/helper";
 import { FC, useEffect } from "react";
 import Head from "next/head";
 import { GetServerSideProps } from "next";
+import { getExternalUrl } from "../../utils/helper";
 
 interface Project {
   projectName: string;

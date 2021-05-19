@@ -1,16 +1,10 @@
-import React, {
-  FC,
-  MutableRefObject,
-  useCallback,
-  useRef,
-  useState,
-} from "react";
-import { Form, InputField, TextArea } from "./reactHookFormUI";
-import ReCaptcha, { ReCAPTCHA } from "react-google-recaptcha";
-import ErrorText from "./errorText";
+import React, { FC, MutableRefObject, useRef, useState } from "react";
+import ReCaptcha from "react-google-recaptcha";
 import * as Yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import ErrorText from "./errorText";
+import { Form, InputField, TextArea } from "./reactHookFormUI";
 
 interface IContactForm {
   submitted: () => void;
@@ -39,12 +33,11 @@ const ContactForm: FC<IContactForm> = ({ submitted }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const reCaptchaRef = useRef() as MutableRefObject<ReCaptcha>;
 
-  const { handleSubmit, register, errors, setValue, watch, trigger } =
-    useForm<IMessage>({
-      resolver: yupResolver(validationSchema),
-      mode: "onTouched",
-      defaultValues: {},
-    });
+  const { handleSubmit, register, errors } = useForm<IMessage>({
+    resolver: yupResolver(validationSchema),
+    mode: "onTouched",
+    defaultValues: {},
+  });
 
   const onSubmit = async (data: IMessage) => {
     setIsSubmitting(true);

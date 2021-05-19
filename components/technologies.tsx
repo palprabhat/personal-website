@@ -1,6 +1,7 @@
 import technologiesData from "@data/technologies.json";
+import { FC } from "react";
 
-const Technologies = () => {
+const Technologies: FC = () => {
   return (
     <section className="text-center section-p">
       <h2>

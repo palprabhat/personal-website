@@ -1,6 +1,5 @@
 import Link from "next/link";
-import FeelingProud from "./animation/feelingProud";
-import BrandLink from "./brandLink";
+import { FC } from "react";
 import {
   downloadLink,
   feelingProudSvg,
@@ -12,8 +11,10 @@ import {
   linkedInIcon,
   twitterIcon,
 } from "../constants/testIds.const";
+import FeelingProud from "./animation/feelingProud";
+import BrandLink from "./brandLink";
 
-const Hero = () => {
+const Hero: FC = () => {
   return (
     <section>
       <div className="text-center pt-11 md:pt-32">

@@ -1,5 +1,5 @@
 import { urls } from "../constants/urls.const";
-export const getExternalUrl = (projectName: string) => {
+export const getExternalUrl = (projectName: string): string => {
   let url = "";
   switch (projectName) {
     case "bouncyball":

@@ -20,7 +20,7 @@ declare namespace Gtag {
   }
 
   interface CustomParams {
-    [key: string]: any;
+    [key: string]: unknown;
   }
 
   interface ControlParams {

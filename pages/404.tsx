@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FC } from "react";
 
-const Custom404 = () => {
+const Custom404: FC = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <Image src="/images/404.svg" width="1075" height="585" />

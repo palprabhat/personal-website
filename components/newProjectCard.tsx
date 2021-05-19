@@ -48,27 +48,6 @@ const smoothInTech = {
   },
 };
 
-const smoothIn = {
-  hidden: {
-    opacity: 0,
-    height: 0,
-    translateY: 60,
-    transition: {
-      duration: 0.15,
-      ease: "easeInOut",
-      delay: 0,
-    },
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 0.25,
-      ease: "easeInOut",
-      delay: 0.2,
-    },
-  },
-};
-
 const slideUp = {
   hidden: {
     translateY: 0,

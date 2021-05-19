@@ -1,7 +1,8 @@
-import TimelineCard from "./timelineCard";
 import timelineData from "@data/timeline.json";
+import { FC } from "react";
+import TimelineCard from "./timelineCard";
 
-const Timeline = () => {
+const Timeline: FC = () => {
   return (
     <section className="text-center section-p">
       <h2>Timeline</h2>

@@ -1,7 +1,8 @@
-import NewProjectCard from "./newProjectCard";
 import projects from "@data/recentProjects.json";
+import { FC } from "react";
+import NewProjectCard from "./newProjectCard";
 
-const RecentProjects = () => {
+const RecentProjects: FC = () => {
   return (
     <section className="text-center section-p">
       <h2>My Recent Projects</h2>

@@ -8,10 +8,13 @@
   },
   "extends": [
     "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:react-hooks/recommended",
+    "plugin:import/typescript",
     "prettier",
     "prettier/react"
   ],
@@ -22,19 +25,27 @@
     },
     "sourceType": "module"
   },
-  "plugins": ["prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "react", "react-hooks", "@typescript-eslint"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "react/display-name": "off",
     "react-hooks/exhaustive-deps": "off",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "prefer-template": "error",
     "prettier/prettier": "error",
     "import/no-unresolved": "off",
     "no-process-env": "off",
-    "no-undef": "warn"
+    "no-undef": "warn",
+    "import/order": "error"
   },
   "globals": {
-    "React": "writable"
+    "React": "writable",
+    "JSX": true,
+    "RequestInfo": true,
+    "RequestInit": true,
+    "Gtag": true
   }
 }

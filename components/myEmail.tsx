@@ -1,6 +1,7 @@
+import { FC } from "react";
 import { myEmail } from "../constants/testIds.const";
 
-const MyEmail = () => {
+const MyEmail: FC = () => {
   return (
     <a
       href="mailto:prabhatpal.14@gmail.com"

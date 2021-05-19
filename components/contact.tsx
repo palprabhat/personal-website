@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { FC, useState } from "react";
 import MyEmail from "./myEmail";
 import ContactForm from "./contactForm";
 
@@ -8,7 +8,7 @@ const STAGE = {
   COMPLETE: "complete",
 };
 
-const Contact = () => {
+const Contact: FC = () => {
   const [stage, setStage] = useState(STAGE.INITIAL);
 
   return (

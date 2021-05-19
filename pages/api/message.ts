@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { NextApiRequest, NextApiResponse } from "next";
 import FormData from "form-data";
 
@@ -64,7 +65,7 @@ const sendMessage: SendMessage = async (reqBody): Promise<any> => {
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
-) {
+): Promise<void> {
   if (req.method === "POST") {
     const reqBody = JSON.parse(req.body) as RequestBody;
 

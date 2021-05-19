@@ -8,15 +8,14 @@ import {
   RefObject,
   TextareaHTMLAttributes,
 } from "react";
-import { FieldError } from "react-hook-form";
-import ErrorText from "./errorText";
-
 import {
+  FieldError,
   FieldElement,
   FieldErrors,
   FieldValues,
   Ref as ReactHookFormRef,
 } from "react-hook-form";
+import ErrorText from "./errorText";
 
 interface IForm
   extends DetailedHTMLProps<
@@ -106,12 +105,12 @@ export const InputField: FC<IInputField> = ({
   ...rest
 }) => {
   return (
-    <div className="my-2">
+    <div className={`my-2 ${containerClassName}`}>
       <input
         name={name}
         ref={register}
         {...rest}
-        className="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        className={`border-none rounded-3xl w-full px-5 py-2 outline-none ${className}`}
       />
       <ErrorText>{error && error.message}</ErrorText>
     </div>
@@ -127,13 +126,13 @@ export const TextArea: FC<ITextArea> = ({
   ...rest
 }) => {
   return (
-    <div className="my-2">
+    <div className={`my-2 ${containerClassName}`}>
       <textarea
         name={name}
         ref={register}
         rows={3}
         {...rest}
-        className="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+        className={`border-none rounded-3xl px-4 py-2 w-full outline-none resize-none ${className}`}
       />
       <ErrorText>{error && error.message}</ErrorText>
     </div>
