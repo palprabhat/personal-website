@@ -1,6 +1,6 @@
 const jestConfig = {
   testPathIgnorePatterns: ["<rootDir>/.next/", "<rootDir>/node_modules/"],
-  setupFilesAfterEnv: ["<rootDir>/jest-setup.js"],
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   testMatch: ["**/__tests__/*.test.{ts,tsx,js,jsx}"],
   transform: {
     "^.+\\.(js|jsx|ts|tsx)$": "babel-jest",

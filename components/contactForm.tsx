@@ -44,7 +44,7 @@ const ContactForm: FC<IContactForm> = ({ submitted }) => {
 
     let reToken = null;
     /* istanbul ignore next */
-    if (process.env.NODE_ENV?.toLowerCase() !== "test") {
+    if (process.env.NODE_ENV?.toLowerCase() === "production") {
       reToken = await reCaptchaRef.current.executeAsync();
       reCaptchaRef.current.reset();
     }

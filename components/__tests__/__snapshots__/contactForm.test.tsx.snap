@@ -6,11 +6,11 @@ exports[`ContactForm Component should handle unexpected exception 1`] = `
     class="w-full undefined"
   >
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Name"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="name"
         placeholder="Name"
       />
@@ -19,11 +19,11 @@ exports[`ContactForm Component should handle unexpected exception 1`] = `
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Email"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="email"
         placeholder="Email"
       />
@@ -32,11 +32,11 @@ exports[`ContactForm Component should handle unexpected exception 1`] = `
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Subject"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="subject"
         placeholder="Subject"
       />
@@ -45,11 +45,11 @@ exports[`ContactForm Component should handle unexpected exception 1`] = `
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <textarea
         aria-label="Message"
-        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none undefined"
         name="message"
         placeholder="Message"
         rows="3"
@@ -80,11 +80,11 @@ exports[`ContactForm Component should not submit an empty form 1`] = `
     class="w-full undefined"
   >
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Name"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="name"
         placeholder="Name"
       />
@@ -95,11 +95,11 @@ exports[`ContactForm Component should not submit an empty form 1`] = `
       </div>
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Email"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="email"
         placeholder="Email"
       />
@@ -110,11 +110,11 @@ exports[`ContactForm Component should not submit an empty form 1`] = `
       </div>
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Subject"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="subject"
         placeholder="Subject"
       />
@@ -125,11 +125,11 @@ exports[`ContactForm Component should not submit an empty form 1`] = `
       </div>
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <textarea
         aria-label="Message"
-        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none undefined"
         name="message"
         placeholder="Message"
         rows="3"
@@ -157,11 +157,11 @@ exports[`ContactForm Component should render correct content 1`] = `
     class="w-full undefined"
   >
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Name"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="name"
         placeholder="Name"
       />
@@ -170,11 +170,11 @@ exports[`ContactForm Component should render correct content 1`] = `
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Email"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="email"
         placeholder="Email"
       />
@@ -183,11 +183,11 @@ exports[`ContactForm Component should render correct content 1`] = `
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Subject"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="subject"
         placeholder="Subject"
       />
@@ -196,11 +196,11 @@ exports[`ContactForm Component should render correct content 1`] = `
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <textarea
         aria-label="Message"
-        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none undefined"
         name="message"
         placeholder="Message"
         rows="3"
@@ -226,11 +226,11 @@ exports[`ContactForm Component should show error message on submission failed 1`
     class="w-full undefined"
   >
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Name"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="name"
         placeholder="Name"
       />
@@ -239,11 +239,11 @@ exports[`ContactForm Component should show error message on submission failed 1`
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Email"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="email"
         placeholder="Email"
       />
@@ -252,11 +252,11 @@ exports[`ContactForm Component should show error message on submission failed 1`
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Subject"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="subject"
         placeholder="Subject"
       />
@@ -265,11 +265,11 @@ exports[`ContactForm Component should show error message on submission failed 1`
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <textarea
         aria-label="Message"
-        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none undefined"
         name="message"
         placeholder="Message"
         rows="3"
@@ -300,11 +300,11 @@ exports[`ContactForm Component should submit with valid form data 1`] = `
     class="w-full undefined"
   >
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Name"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="name"
         placeholder="Name"
       />
@@ -313,11 +313,11 @@ exports[`ContactForm Component should submit with valid form data 1`] = `
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Email"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="email"
         placeholder="Email"
       />
@@ -326,11 +326,11 @@ exports[`ContactForm Component should submit with valid form data 1`] = `
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <input
         aria-label="Subject"
-        class="border-none rounded-3xl w-full px-5 py-2 outline-none"
+        class="border-none rounded-3xl w-full px-5 py-2 outline-none undefined"
         name="subject"
         placeholder="Subject"
       />
@@ -339,11 +339,11 @@ exports[`ContactForm Component should submit with valid form data 1`] = `
       />
     </div>
     <div
-      class="my-2"
+      class="my-2 undefined"
     >
       <textarea
         aria-label="Message"
-        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none"
+        class="border-none rounded-3xl px-4 py-2 w-full outline-none resize-none undefined"
         name="message"
         placeholder="Message"
         rows="3"
