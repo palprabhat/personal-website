@@ -69,6 +69,18 @@ class MyDocument extends Document {
           <meta property="og:image:height" content="255" />
           <meta property="og:url" content="http://www.prabhatpal.com" />
           <meta name="twitter:card" content="summary" />
+          <meta property="twitter:title" content="Prabhat Kumar Pal" />
+          <meta
+            property="twitter:description"
+            content="Portfolio | Full-stack web developer"
+          />
+          <meta property="twitter:type" content="website" />
+          <meta
+            property="twitter:image"
+            itemProp="image"
+            content="http://www.prabhatpal.com/_next/image?url=%2Fimages%2Flogo.svg"
+          />
+          <meta property="og:url" content="http://www.prabhatpal.com" />
 
           {process.env.NODE_ENV === "production" ? (
             <>
