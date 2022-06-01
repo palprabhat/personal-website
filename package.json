@@ -24,7 +24,7 @@
     "react-google-recaptcha": "^2.1.0",
     "react-hook-form": "6.14.2",
     "sass": "^1.28.0",
-    "sharp": "^0.27.1",
+    "sharp": "^0.30.5",
     "yup": "^0.29.3"
   },
   "devDependencies": {
