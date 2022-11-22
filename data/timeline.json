@@ -1,9 +1,19 @@
 [
   {
     "type": "work",
-    "period": "Apr 2021 - Present",
+    "period": "Apr 2022 - Present",
+    "title": "Hbo Max",
+    "subTitle": "Senior Software Engineer",
+    "descriptions": []
+  },
+  {
+    "type": "work",
+    "period": "Apr 2021 - Mar 2022",
     "title": "Osaro Inc.",
-    "subTitle": "Web Developer"
+    "subTitle": "Web Developer",
+    "descriptions": [
+      "Design and build UI components to control robots used for picking and placing items."
+    ]
   },
   {
     "type": "work",
